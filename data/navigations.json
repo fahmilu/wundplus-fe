@@ -1,0 +1,42 @@
+{
+    "about-us": {
+        "en": {
+            "slug": "?#about-us",
+            "label": "About Us"
+        },
+        "id": {
+            "slug": "?#tentang-kami",
+            "label": "Tentang Kami"
+        }
+    },
+    "products": {
+        "en": {
+            "slug": "?#products",
+            "label": "Products"
+        },
+        "id": {
+            "slug": "?#produk",
+            "label": "Produk"
+        }
+    },
+    "articles": {
+        "en": {
+            "slug": "articles",
+            "label": "Articles"
+        },
+        "id": {
+            "slug": "artikel",
+            "label": "Artikel"
+        }
+    },
+    "contact-us": {
+        "en": {
+            "slug": "contact-us",
+            "label": "Contact Us"
+        },
+        "id": {
+            "slug": "hubungi-kami",
+            "label": "Hubungi Kami"
+        }
+    }
+}

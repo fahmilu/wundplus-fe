@@ -1,0 +1,199 @@
+{
+    "components" : [
+        {
+            "type": "home-banner",
+            "data": {
+                "title": "<strong>Solusi Tepat</strong><br /> untuk Pemulihan <br />Lebih Cepat",
+                "description": "<p>Nikmati perawatan luka yang lebih simple dan aman tanpa ganggu kenyamanan</p>",
+                "image": "/imgs/banner.jpg",
+                "btn_url": "/shop",
+                "btn_text": "BACA SELENGKAPNYA"
+            }
+        },
+        {
+            "type": "home-about",
+            "data": {
+                "title": "<strong>Dari Hati</strong><br /> dengan Inovasi",
+                "description": "<strong><p>wund+™ adalah produk inovatif untuk</strong> perawatan diri dari GWS Wellness. Formulasinya dikhususkan untuk perawatan luka, mulai dari proteksi, rawat, sembuh dan samarkan. Mengedepankan pengembangan kandungankandungan alami, wund+™ hadir sebagai solusi perawatan yang lembut dan cocok untuk segala usia serta berbagai jenis kulit.</p>",
+                "image": "/imgs/about-bg.jpg",
+                "image_icon": "/imgs/logos.png"
+            }
+        },
+        {
+            "type": "home-product",
+            "data": {
+                "title": "Kenali <strong>[wund]</strong> Lebih Jauh",
+                "items": [
+                    {
+                        "label": "Regenration Cream",
+                        "image": "/imgs/products/regeneration-cream.png"
+                    },
+                    {
+                        "label": "Scar Gel",
+                        "image": "/imgs/products/scar-gel.png"
+                    },
+                    {
+                        "label": "Wound Spray",
+                        "image": "/imgs/products/wound-spray.png"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-suitable-for",
+            "data": {
+                "title": "<strong>[wund]</strong> Cocok untuk Tangani Berbagai Luka dan Kondisi Kulit",
+                "items": [
+                    {
+                        "label": "Semua Jenis Luka Kronis",
+                        "image": "/imgs/suitable-for/1.png"
+                    },
+                    {
+                        "label": "Luka Sayatan",
+                        "image": "/imgs/suitable-for/2.png"
+                    },
+                    {
+                        "label": "Luka Bakar",
+                        "image": "/imgs/suitable-for/3.png"
+                    },
+                    {
+                        "label": "Bekas Jerawat",
+                        "image": "/imgs/suitable-for/4.png"
+                    },
+                    {
+                        "label": "Luka Operasi",
+                        "image": "/imgs/suitable-for/5.png"
+                    },
+                    {
+                        "label": "Bekas Operasi Caesar",
+                        "image": "/imgs/suitable-for/6.png"
+                    },
+                    {
+                        "label": "Strech Marks",
+                        "image": "/imgs/suitable-for/7.png"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-side-image",
+            "data": {
+                "title": "<strong>Tahukah</strong> Kamu?",
+                "list": [
+                    {
+                        "image": "/imgs/side-image/1.jpg",
+                        "description": "<strong>Perlindungan 24 Jam</strong> untuk tangkal <b>mikroba</b> dan jaga <b>kelembapan kulit</b> dengan <b>wund+™ Regeneration Cream</b>",
+                        "image_description": "/imgs/side-image/1-desc.png"
+                    },
+                    {
+                        "image": "/imgs/side-image/2.jpg",
+                        "description": "<strong>orang dengan diabetes</strong> merasakan perbaikan kulit hanya dalam 1 jam setelah penggunaan <b>wund+™ Regeneration Cream</b>",
+                        "image_description": "/imgs/side-image/2-desc.png"
+                    },
+                    {
+                        "image": "/imgs/side-image/3.jpg",
+                        "title": "HOCl dalam wund+™ Wound Spray",
+                        "description": "<ul><li><strong>2x lebih efektif</strong> kurangi pertumbuhan mikroba dibanding PVI</li><li><strong>Efektif hilangkan bau</strong> luka hingga 100%</li><li><strong>Terbukti secara klinis 75% lebih efektif</strong> atasi Ulkus Kaki Diabetik ringan dalam 2 minggu</li></ul>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-facts",
+            "data": {
+                "list": [
+                    {
+                        "image": "/imgs/facts/1.png",
+                        "description": "<strong>62% luka diabetik parah</strong> membaik dalam satu minggu dengan HOCl yang ada <b>dalam wund+™ Wound Spray</b>"
+                    },
+                    {
+                        "image": "/imgs/facts/2.png",
+                        "description": "<strong>Centella Reversa dalam wund+™ Scar Gel 72%</strong> lebih efektif mempercepat proses  <b>penyembuhan dan penyamaran luka</b>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-articles",
+            "data": {
+                "title": "Percepat Penyembuhan Lukamu dengan <strong>wund+™</strong>",
+                "list": [
+                    {
+                        "_id": "1",
+                        "image": "/imgs/articles/1.png",
+                        "title": "Hilangkan <strong>bekas jerawat</strong> dengan <strong>[wund]</strong> Scar Gel"
+                    },
+                    {
+                        "_id": "2",
+                        "image": "/imgs/articles/2.png",
+                        "title": "Generasi baru untuk samarkan <strong>bekas luka</strong>"
+                    },
+                    {
+                        "_id": "3",
+                        "image": "/imgs/articles/3.png",
+                        "title": "Sembuhkan luka bakar dengan tuntas dan optimal dengan <strong>[wund] Regeneration Cream</strong>"
+                    },
+                    {
+                        "_id": "4",
+                        "image": "/imgs/articles/4.png",
+                        "title": "Solusi ampuh untuk <strong>atasi kulit kering</strong>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-testimonials",
+            "data": {
+                "title": "Gabung <strong>[wund]</strong> dalam mempercepat penyembuhan lukamu!",
+                "list": [
+                    {
+                        "_id": "1",
+                        "image": "/imgs/testimonials/1.jpg",
+                        "name": "dr. Anton Budi Asih",
+                        "role": "dokter umum",
+                        "description": "<strong>[wund] Regeneration Cream</strong> mengandung antiradang kulit, antibakteri, dan vitamin, juga pelembap alami yang bisa memperbaiki hidrasi kulit. Juga, mampu melindungi skin barrier. MicroSilver dalam krim ini mampu mengatasi bakteri dan menstabilkan flora normal di kulit."
+                    },
+                    {
+                        "_id": "2", 
+                        "image": "/imgs/testimonials/2.jpg",
+                        "name": "dr. Heru Soedjadi",
+                        "role": "dokter spesialis dermatologi",
+                        "description": "<strong>[wund] Scar Gel</strong> dapat membantu mengatasi luka bakar, karena dapat menstimulasi produksi kolagen dan elastin, serta membantu menutrisi dan mengisi kulit luka bakar."
+                    },
+                    {
+                        "_id": "3",
+                        "image": "/imgs/testimonials/3.jpg",
+                        "name": "dr. Zulfi Rahman",
+                        "role": "dokter spesialis fisioterapi",
+                        "description": "<strong>[wund] Wound Spray</strong> dapat meningkatkan produksi kolagen dan elastin, serta membantu menutrisi dan mengisi kulit luka bakar."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-trusted-by",
+            "data": {
+                "list": [
+                    {
+                        "label": "Dipercayai oleh",
+                        "image": "/imgs/trusted-by/1.png",
+                        "count": "100+",
+                        "description": "<strong>Rumah sakit</strong>, termasuk rumah sakit tipe A"
+                    },
+                    {
+                        "label": "Diandalkan oleh",
+                        "image": "/imgs/trusted-by/2.png",
+                        "count": "400+",
+                        "description": "<strong>Dokter</strong>  dari berbagai  spesialisasi"
+                    },
+                    {
+                        "label": "Digunakan oleh",
+                        "image": "/imgs/trusted-by/3.png",
+                        "count": "2000+",
+                        "description": "<strong>Pasein</strong> untuk berbagai jenis luka dan semua tipe kulit"
+                    }
+                ]
+            }
+        }
+    ]
+}

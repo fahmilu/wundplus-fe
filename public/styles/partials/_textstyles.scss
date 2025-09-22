@@ -1,1 +1,35 @@
 // text styles
+@layer components {
+    .text-description {
+        @apply pw-text-[33px] big:text-[33px] pw-leading-[46px] big:leading-[46px];
+
+        strong {
+            @apply font-bold text-wund-red;
+        }
+    }
+}
+
+
+h1 {
+    @apply big:text-[656px] md:pw-text-[656px] leading-[1.1] font-gotham font-light;
+}
+
+h2 {
+    @apply big:text-[48px] md:pw-text-[48px] leading-[1.1] font-gotham font-light;
+
+    strong {
+        @apply font-bold text-wund-red;
+    }
+}
+
+h3 {
+    @apply big:text-[48px] md:pw-text-[32px] leading-[1.1] font-gotham font-light;
+}
+
+h4 {
+    @apply big:text-[40px] md:pw-text-[24px] leading-[1.1] font-gotham font-light;
+}
+
+h5 {
+    @apply big:text-[32px] md:pw-text-[20px] leading-[1.1] font-gotham font-light;
+}

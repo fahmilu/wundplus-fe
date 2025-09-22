@@ -2,4 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    @apply bg-base-100;
+}
+
+html {
+    @apply scroll-smooth;
+    
+}
+
+body {
+    @apply font-gotham font-light big:text-[20px] big:leading-[30px] md:pw-text-[20px] md:pw-leading-[30px] antialiased text-wund-black;
+}
+
+main {
+    @apply pw-pt-[130px] big:pt-[130px];
+}
+
+a {
+    @apply transition-all duration-300 ease-in-out;
+}
+
+.container {
+    @apply max-w-[1440px] mx-auto md:pw-px-[65px] big:px-[65px];
+}
+
+.label-title {
+    @apply bg-wund-red text-white pw-pr-[120px] big:pr-[120px] pw-pl-[65px] big:pl-[65px] pw-py-[40px] big:py-[40px] pw-rounded-ee-[100px] big:rounded-ee-[100px] pw-text-[56px] big:text-[56px] leading-[1.2] font-light absolute top-0 left-0;
+
+    strong {
+        @apply font-bold;
+    }
+}
+
+
+
+
 @import "./partials/textstyles";
+@import "./partials/header";
+@import "./partials/button";
+@import "./partials/footer";
+
+@import "./components/home";

@@ -9,10 +9,22 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "aos": "^2.3.4",
+    "daisyui": "^5.1.13",
+    "gsap": "^3.13.0",
+    "i18next": "^25.5.2",
+    "i18next-resources-to-backend": "^1.2.1",
+    "lenis": "^1.3.11",
     "next": "15.5.3",
+    "next-i18n-router": "^5.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "sass": "^1.92.1"
+    "react-i18next": "^15.7.3",
+    "react-slick": "^0.31.0",
+    "sass": "^1.92.1",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss-px-to-viewport": "^0.1.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -1,0 +1,11 @@
+.btn {
+    @apply rounded-full py-[25px] px-[25px] text-[20px] leading-[36px] border-none font-light;
+
+    &-primary {
+        @apply bg-wund-red text-white hover:bg-wund-red/80;
+    }
+
+    &-secondary {
+        @apply border border-solid bg-transparent border-wund-red text-wund-red hover:bg-wund-red/80 hover:text-white #{!important};
+    }
+}
