@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { replaceText } from "@/utils/wund";
+import { TextAnimation } from "@/utils/textAnimation";
 const TrustedBy = ({ data }) => {
     return (
         <section className="home-trusted-by">
@@ -7,9 +8,11 @@ const TrustedBy = ({ data }) => {
                 <div className="home-trusted-by__items">
                     {data.list.map((item, index) => (
                         <div key={index} className="home-trusted-by__items__item" data-aos="fade-up" data-aos-delay={index * 100}>
-                            <div className="home-trusted-by__items__item__label">
+                            <TextAnimation delay={0.1}>
+                                <div className="home-trusted-by__items__item__label">
                                 {item.label}
-                            </div>
+                                </div>
+                            </TextAnimation>
                             <div className="home-trusted-by__items__item__content">
                                 <div className="home-trusted-by__items__item__image">
                                     <Image src={item.image} alt={item.description} fill />
@@ -17,7 +20,9 @@ const TrustedBy = ({ data }) => {
                                 <div className="home-trusted-by__items__item__count">
                                     {item.count}
                                 </div>
-                                <div className="home-trusted-by__items__item__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
+                                <TextAnimation delay={0.2}>
+                                    <div className="home-trusted-by__items__item__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
+                                </TextAnimation>
                             </div>
                         </div>
                     ))}

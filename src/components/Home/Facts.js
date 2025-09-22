@@ -11,7 +11,7 @@ const Facts = ({ data }) => {
                             <div className="home-facts__items__item__image" data-aos="fade-up" data-aos-delay={100}>
                                 <Image src={item.image} alt={item.description || `fact image`} fill />
                             </div>
-                            <TextAnimation delay={0.1}>
+                            <TextAnimation delay={0.2}>
                                 <div className="home-facts__items__item__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
                             </TextAnimation>
                         </div>

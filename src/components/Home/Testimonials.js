@@ -48,7 +48,7 @@ const Testimonials = ({ data }) => {
     return (
         <section className="home-testimonials">
             <div className="container">
-                <TextAnimation delay={0.1}>
+                <TextAnimation delay={0.3}>
                     <h2 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
                 </TextAnimation>
                 <div className="home-testimonials__items slider-container" data-aos="fade-up" data-aos-delay={100}>

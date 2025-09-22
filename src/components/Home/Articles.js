@@ -4,6 +4,7 @@ import Image from "next/image";
 import { replaceText } from "@/utils/wund";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { TextAnimation } from "@/utils/textAnimation";
 import { useTranslation } from "react-i18next";
 const Articles = ({ data }) => {
     const [currentArticle, setCurrentArticle] = useState(null);
@@ -20,7 +21,7 @@ const Articles = ({ data }) => {
     return (
         <section className="home-articles overflow-hidden">
             <div className="container">
-                <h2 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
+                <h2 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} data-aos="fade-up" data-aos-delay={100} />
                 <div className="home-articles__content">
                     <div className="home-articles__content__image" data-aos="fade-right" data-aos-delay={100}>
                         {currentArticle && 
