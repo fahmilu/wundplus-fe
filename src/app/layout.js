@@ -57,7 +57,7 @@ const myriadPro = localFont({
 
 export const metadata = {
   title: "wund+™",
-  description: "Wund+",
+  description: "Solusi Tepat untuk pemulihan lebih cepat",
 };
 
 export default function RootLayout({ children }) {
