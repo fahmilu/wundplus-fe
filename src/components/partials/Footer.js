@@ -10,15 +10,15 @@ export default function Footer() {
                         <div className="footer__social-media">
                             <div className="footer__social-media__items">
                                 <a href="https://www.instagram.com/wundplus" target="_blank">
-                                    <img src="/imgs/IG.svg" className="w-10 h-10" alt="Instagram" />
+                                    <img src="/imgs/IG.svg" className="icon" alt="Instagram" />
                                     <span>@wundplus</span>
                                 </a>
                                 <a href="https://www.instagram.com/gws.wellness" target="_blank">
-                                    <img src="/imgs/IG.svg" className="w-10 h-10" alt="Instagram" />
+                                    <img src="/imgs/IG.svg" className="icon" alt="Instagram" />
                                     <span>@gws.wellness</span>
                                 </a>
                                 <a href="https://www.tiktok.com/@wundplus" target="_blank">
-                                    <img src="/imgs/TK.svg" className="w-10 h-10" alt="tiktok" />
+                                    <img src="/imgs/TK.svg" className="icon" alt="tiktok" />
                                     <span>@wundplus</span>
                                 </a>
     

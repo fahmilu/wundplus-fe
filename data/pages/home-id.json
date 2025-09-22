@@ -6,6 +6,7 @@
                 "title": "<strong>Solusi Tepat</strong><br /> untuk Pemulihan <br />Lebih Cepat",
                 "description": "<p>Nikmati perawatan luka yang lebih simple dan aman tanpa ganggu kenyamanan</p>",
                 "image": "/imgs/banner.jpg",
+                "image_mobile": "/imgs/home-mobile-new.jpg",
                 "btn_url": "/shop",
                 "btn_text": "BACA SELENGKAPNYA"
             }
@@ -16,6 +17,7 @@
                 "title": "<strong>Dari Hati</strong><br /> dengan Inovasi",
                 "description": "<strong><p>wund+™ adalah produk inovatif untuk</strong> perawatan diri dari GWS Wellness. Formulasinya dikhususkan untuk perawatan luka, mulai dari proteksi, rawat, sembuh dan samarkan. Mengedepankan pengembangan kandungankandungan alami, wund+™ hadir sebagai solusi perawatan yang lembut dan cocok untuk segala usia serta berbagai jenis kulit.</p>",
                 "image": "/imgs/about-bg.jpg",
+                "image_mobile": "/imgs/about-mobile.jpg",
                 "image_icon": "/imgs/logos.png"
             }
         },
@@ -25,7 +27,7 @@
                 "title": "Kenali <strong>[wund]</strong> Lebih Jauh",
                 "items": [
                     {
-                        "label": "Regenration Cream",
+                        "label": "Regeneration Cream",
                         "image": "/imgs/products/regeneration-cream.png"
                     },
                     {

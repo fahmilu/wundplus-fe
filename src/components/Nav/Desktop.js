@@ -9,7 +9,7 @@ export default function Desktop({ navItems }) {
     const pathname = usePathname();
     const { i18n } = useTranslation();
     return (
-        <nav className="hidden lg:flex" data-aos="fade-down">
+        <nav className="md:flex hidden" data-aos="fade-down">
             {navItems.map((item) => (
                 <Link key={item.key} href={item.href} className={`nav-link`}>{item.label}</Link>
             ))}

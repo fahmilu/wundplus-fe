@@ -1,0 +1,201 @@
+{
+    "components": [
+        {
+            "type": "home-banner",
+            "data": {
+                "title": "<strong>The Right Solution</strong><br /> for Faster Recovery",
+                "description": "<p>Enjoy simpler and safer wound care without compromising comfort</p>",
+                "image": "/imgs/banner.jpg",
+                "image_mobile": "/imgs/home-mobile-new.jpg",
+                "btn_url": "/shop",
+                "btn_text": "READ MORE"
+            }
+        },
+        {
+            "type": "home-about",
+            "data": {
+                "title": "<strong>From the Heart</strong><br /> with Innovation",
+                "description": "<strong><p>wund+™ is an innovative product for</strong> self-care from GWS Wellness. Its formula is specially designed for wound care, from protection, treatment, healing, to concealing. Prioritizing the development of natural ingredients, wund+™ is a gentle care solution suitable for all ages and all skin types.</p>",
+                "image": "/imgs/about-bg.jpg",
+                "image_mobile": "/imgs/about-mobile.jpg",
+                "image_icon": "/imgs/logos.png"
+            }
+        },
+        {
+            "type": "home-product",
+            "data": {
+                "title": "Get to Know <strong>[wund]</strong> Better",
+                "items": [
+                    {
+                        "label": "Regeneration Cream",
+                        "image": "/imgs/products/regeneration-cream.png"
+                    },
+                    {
+                        "label": "Scar Gel",
+                        "image": "/imgs/products/scar-gel.png"
+                    },
+                    {
+                        "label": "Wound Spray",
+                        "image": "/imgs/products/wound-spray.png"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-suitable-for",
+            "data": {
+                "title": "<strong>[wund]</strong> Suitable for Treating Various Wounds and Skin Conditions",
+                "items": [
+                    {
+                        "label": "All Types of Chronic Wounds",
+                        "image": "/imgs/suitable-for/1.png"
+                    },
+                    {
+                        "label": "Incision Wounds",
+                        "image": "/imgs/suitable-for/2.png"
+                    },
+                    {
+                        "label": "Burns",
+                        "image": "/imgs/suitable-for/3.png"
+                    },
+                    {
+                        "label": "Acne Scars",
+                        "image": "/imgs/suitable-for/4.png"
+                    },
+                    {
+                        "label": "Surgical Wounds",
+                        "image": "/imgs/suitable-for/5.png"
+                    },
+                    {
+                        "label": "C-section Scars",
+                        "image": "/imgs/suitable-for/6.png"
+                    },
+                    {
+                        "label": "Stretch Marks",
+                        "image": "/imgs/suitable-for/7.png"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-side-image",
+            "data": {
+                "title": "<strong>Did</strong> You Know?",
+                "list": [
+                    {
+                        "image": "/imgs/side-image/1.jpg",
+                        "description": "<strong>24-Hour Protection</strong> to fight <b>microbes</b> and maintain <b>skin moisture</b> with <b>wund+™ Regeneration Cream</b>",
+                        "image_description": "/imgs/side-image/1-desc.png"
+                    },
+                    {
+                        "image": "/imgs/side-image/2.jpg",
+                        "description": "<strong>People with diabetes</strong> experience skin improvement in just 1 hour after using <b>wund+™ Regeneration Cream</b>",
+                        "image_description": "/imgs/side-image/2-desc.png"
+                    },
+                    {
+                        "image": "/imgs/side-image/3.jpg",
+                        "title": "HOCl in wund+™ Wound Spray",
+                        "description": "<ul><li><strong>2x more effective</strong> at reducing microbial growth compared to PVI</li><li><strong>Effectively eliminates</strong> wound odor up to 100%</li><li><strong>Clinically proven 75% more effective</strong> in treating mild Diabetic Foot Ulcers within 2 weeks</li></ul>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-facts",
+            "data": {
+                "list": [
+                    {
+                        "image": "/imgs/facts/1.png",
+                        "description": "<strong>62% of severe diabetic wounds</strong> improved within one week with HOCl in <b>wund+™ Wound Spray</b>"
+                    },
+                    {
+                        "image": "/imgs/facts/2.png",
+                        "description": "<strong>Centella Reversa in wund+™ Scar Gel is 72%</strong> more effective in accelerating the <b>healing and fading of wounds</b>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-articles",
+            "data": {
+                "title": "Accelerate Your Wound Healing with <strong>wund+™</strong>",
+                "list": [
+                    {
+                        "_id": "1",
+                        "image": "/imgs/articles/1.png",
+                        "title": "Eliminate <strong>acne scars</strong> with <strong>[wund]</strong> Scar Gel"
+                    },
+                    {
+                        "_id": "2",
+                        "image": "/imgs/articles/2.png",
+                        "title": "A new generation to fade <strong>wound scars</strong>"
+                    },
+                    {
+                        "_id": "3",
+                        "image": "/imgs/articles/3.png",
+                        "title": "Heal burns thoroughly and optimally with <strong>[wund] Regeneration Cream</strong>"
+                    },
+                    {
+                        "_id": "4",
+                        "image": "/imgs/articles/4.png",
+                        "title": "A powerful solution to <strong>treat dry skin</strong>"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-testimonials",
+            "data": {
+                "title": "Join <strong>[wund]</strong> in speeding up your wound healing!",
+                "list": [
+                    {
+                        "_id": "1",
+                        "image": "/imgs/testimonials/1.jpg",
+                        "name": "Dr. Anton Budi Asih",
+                        "role": "general practitioner",
+                        "description": "<strong>[wund] Regeneration Cream</strong> contains anti-inflammatory, antibacterial, and vitamins, as well as natural moisturizers that can improve skin hydration. It also helps protect the skin barrier. MicroSilver in this cream can fight bacteria and stabilize the skin's normal flora."
+                    },
+                    {
+                        "_id": "2",
+                        "image": "/imgs/testimonials/2.jpg",
+                        "name": "Dr. Heru Soedjadi",
+                        "role": "dermatology specialist",
+                        "description": "<strong>[wund] Scar Gel</strong> can help treat burns, as it stimulates collagen and elastin production, and helps nourish and fill burned skin."
+                    },
+                    {
+                        "_id": "3",
+                        "image": "/imgs/testimonials/3.jpg",
+                        "name": "Dr. Zulfi Rahman",
+                        "role": "physiotherapy specialist",
+                        "description": "<strong>[wund] Wound Spray</strong> can increase collagen and elastin production, as well as help nourish and fill burned skin."
+                    }
+                ]
+            }
+        },
+        {
+            "type": "home-trusted-by",
+            "data": {
+                "list": [
+                    {
+                        "label": "Trusted by",
+                        "image": "/imgs/trusted-by/1.png",
+                        "count": "100+",
+                        "description": "<strong>Hospitals</strong>, including type A hospitals"
+                    },
+                    {
+                        "label": "Relied on by",
+                        "image": "/imgs/trusted-by/2.png",
+                        "count": "400+",
+                        "description": "<strong>Doctors</strong> from various specialties"
+                    },
+                    {
+                        "label": "Used by",
+                        "image": "/imgs/trusted-by/3.png",
+                        "count": "2000+",
+                        "description": "<strong>Patients</strong> for various types of wounds and all skin types"
+                    }
+                ]
+            }
+        }
+    ]
+}

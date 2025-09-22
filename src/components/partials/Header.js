@@ -16,6 +16,7 @@ export default function Header({ locale }) {
                     <Image src="/imgs/logo.svg" alt="Logo" fill />
                 </Link>
                 <Desktop navItems={navItems} />
+                <Mobile navItems={navItems} />
             </div>
         </header>
     );

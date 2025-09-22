@@ -3,7 +3,7 @@ import { getPageData } from "@/utils/pageData";
 import Switcher from "@/components/Switcher";
 export default async function Home({ params }) {
   const { locale } = await params;
-  const pageData = await getPageData('home');
+  const pageData = await getPageData('home', locale);
   return (
     <LayoutBase locale={locale}>
       {pageData && pageData.components.map((component) => (

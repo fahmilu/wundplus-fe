@@ -1,7 +1,7 @@
 // text styles
 @layer components {
     .text-description {
-        @apply pw-text-[33px] big:text-[33px] pw-leading-[46px] big:leading-[46px];
+        @apply md:pw-text-[33px] big:text-[33px] md:pw-leading-[46px] big:leading-[46px] min-[420px]:text-[25px] text-[20px] leading-[1.5];
 
         strong {
             @apply font-bold text-wund-red;
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-    @apply big:text-[48px] md:pw-text-[48px] leading-[1.1] font-gotham font-light;
+    @apply big:text-[48px] md:pw-text-[48px] text-[28px] md:leading-[1.1] leading-[1.5] font-gotham font-light;
 
     strong {
         @apply font-bold text-wund-red;

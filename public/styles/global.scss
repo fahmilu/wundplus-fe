@@ -12,11 +12,11 @@ html {
 }
 
 body {
-    @apply font-gotham font-light big:text-[20px] big:leading-[30px] md:pw-text-[20px] md:pw-leading-[30px] antialiased text-wund-black;
+    @apply font-gotham font-light big:text-[20px] big:leading-[30px] md:pw-text-[20px] md:pw-leading-[30px] text-base antialiased text-wund-black;
 }
 
 main {
-    @apply pw-pt-[130px] big:pt-[130px];
+    @apply pt-[80px] md:pw-pt-[130px] big:pt-[130px];
 }
 
 a {
@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-    @apply max-w-[1440px] mx-auto md:pw-px-[65px] big:px-[65px];
+    @apply max-w-[1440px] mx-auto px-4 md:pw-px-[65px] big:px-[65px];
 }
 
 .label-title {

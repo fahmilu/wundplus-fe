@@ -24,6 +24,14 @@ const Testimonials = ({ data }) => {
         adaptiveHeight: false,
         dots: false,
         beforeChange: (current, next) => setCurrentSlide(next),
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
     };
 
     const goToPrev = () => {

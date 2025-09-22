@@ -6,7 +6,8 @@ const HomeBanner = ({ data }) => {
     return (
         <div className="home-banner"  data-aos="fade-in">
             <div className="home-banner__image" >
-                <Image src={data.image} alt={data.title} fill />
+                <Image src={data.image} alt={data.title} fill className="hidden md:block" />
+                <Image src={data.image_mobile} alt={data.title} fill className="block md:hidden" />
             </div>
             <div className="container"> 
                 <div className="home-banner__content">

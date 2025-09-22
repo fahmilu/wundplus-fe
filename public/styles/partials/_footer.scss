@@ -1,10 +1,10 @@
 .cta {
     @apply py-[60px];
     .container {
-        @apply flex flex-row gap-4 items-center justify-between;
+        @apply flex md:flex-row flex-col gap-4 gap-y-10 items-center justify-between;
 
         h3 {
-            @apply text-[32px] leading-[1.5] font-gotham font-light max-w-[520px];
+            @apply md:text-[32px] text-[20px] leading-[1.5] text-center md:text-left font-gotham font-light md:max-w-[520px];
 
             strong {
                 @apply font-bold text-wund-red;
@@ -12,17 +12,17 @@
         }
 
         .cta__btn-area {
-            @apply flex flex-col gap-4 items-start justify-center;
+            @apply flex flex-col gap-4 md:items-start items-center justify-center;
 
             span {
-                @apply text-[20px] leading-[1.5] font-gotham font-bold;
+                @apply md:text-[20px] text-[16px] leading-[1.5] font-gotham font-bold;
             }
 
             .cta__btn-area__btn {
                 @apply flex flex-row gap-10 items-center justify-start;
 
                 a {
-                    @apply flex flex-row gap-4 items-center justify-start w-[60px] h-[60px];
+                    @apply flex flex-row gap-4 items-center justify-start md:w-[60px] md:h-[60px] w-[40px] h-[40px];
                 }
             }
         }
@@ -33,19 +33,23 @@ footer {
     @apply bg-[#F9F9F9];
 
     .footer__content {
-        @apply flex flex-row gap-4 items-center justify-between w-full  pb-[40px] pt-[100px];
+        @apply flex md:flex-row flex-col gap-4 items-center justify-between w-full  pb-[40px] md:pt-[100px] pt-[40px];
 
         .footer__social-media {
-            @apply  border-r border-wund-red pr-[120px];
+            @apply  md:border-r border-wund-red md:pr-[120px] pr-0 max-md:w-full;
 
             .footer__social-media__items {
-                @apply grid xl:grid-cols-2 grid-cols-1 gap-4 items-center justify-start;
+                @apply flex max-sm:flex-wrap max-md:justify-evenly md:grid xl:grid-cols-2 md:grid-cols-1 gap-4 items-center justify-start;
 
                 a {
-                    @apply flex flex-row gap-4 items-center justify-start;
+                    @apply flex flex-row sm:gap-4 gap-2 items-center justify-start;
+
+                    .icon {
+                        @apply sm:w-10 min-[400px]:w-6 w-5 sm:h-10 min-[400px]:h-6 h-5;
+                    }
 
                     span {
-                        @apply text-[20px] leading-[1.5] font-gotham font-medium text-wund-red ;
+                        @apply md:text-[20px] sm:text-[16px] text-[12px] leading-[1.5] font-gotham font-medium text-wund-red ;
                     }
                 }
             }
@@ -53,18 +57,18 @@ footer {
     }
 
     .footer__member {
-        @apply flex flex-row gap-10 items-center justify-start flex-wrap;
+        @apply flex flex-row sm:gap-10 gap-4 items-center max-md:pt-4 justify-start flex-wrap;
 
         span {
-            @apply text-[16px] leading-[1.5] font-gotham font-medium text-wund-red xl:w-auto w-full;
+            @apply sm:text-[16px] text-[12px] leading-[1.5] font-gotham font-medium text-wund-red xl:w-auto md:w-full;
         }
 
         img {
-            @apply w-auto h-[56px];
+            @apply w-auto md:h-[56px] h-[20px];
         }
     }
 
     .footer__copyright {
-        @apply text-[16px] leading-[1.5] font-gotham pb-[10px] pt-[20px] text-center bg-wund-red text-white;
+        @apply sm:text-[16px] text-[12px] leading-[1.5] font-gotham pb-[10px] pt-[20px] text-center bg-wund-red text-white;
     }
 }

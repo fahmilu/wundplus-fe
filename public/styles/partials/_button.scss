@@ -1,5 +1,5 @@
 .btn {
-    @apply rounded-full py-[25px] px-[25px] text-[20px] leading-[36px] border-none font-light;
+    @apply rounded-full sm:py-[25px] py-[20px] sm:px-[25px] px-[20px] sm:text-[20px] text-[16px] sm:leading-[36px] leading-[30px] border-none font-light;
 
     &-primary {
         @apply bg-wund-red text-white hover:bg-wund-red/80;
@@ -7,5 +7,13 @@
 
     &-secondary {
         @apply border border-solid bg-transparent border-wund-red text-wund-red hover:bg-wund-red/80 hover:text-white #{!important};
+    }
+
+    &-lang {
+        @apply border border-solid bg-transparent rounded-none first:border-r-0 border-white text-white hover:bg-white/80 hover:text-wund-red py-2 px-4 w-1/2 text-[16px] #{!important};
+
+        &.btn-active {
+            @apply bg-white text-wund-red #{!important};
+        }
     }
 }

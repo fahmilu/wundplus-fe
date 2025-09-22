@@ -1,5 +1,9 @@
 {
     "button": {
         "readmore": "Read more"
+    },
+    "cta": {
+        "description": "Get <strong>[wund]</strong> products according to your needs now!",
+        "btn_text": "Buy here:"
     }
 }
