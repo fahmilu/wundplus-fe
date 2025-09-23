@@ -94,7 +94,7 @@ export default function Mobile({ navItems }) {
                                         </li>
                                         <li>
                                             <a 
-                                                href="https://www.tiktok.com/@wundplus" 
+                                                href="https://shopee.co.id/universal-link/wundplusindonesia" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                                 className="flex items-center gap-3 text-white"
@@ -107,7 +107,7 @@ export default function Mobile({ navItems }) {
                                         </li>
                                         <li>
                                             <a 
-                                                href="https://shopee.co.id/universal-link/wundplusindonesia" 
+                                                href="https://www.tiktok.com/@wundplus" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                                 className="flex items-center gap-3 text-white"

@@ -16,10 +16,10 @@ const CTAs = () => {
                         <a href="https://tk.tokopedia.com/ZSANsnD9P/" target="_blank">
                             <img src="/imgs/tokopedia.png" alt="Tokopedia" />
                         </a>
-                        <a href="https://www.tiktok.com/@wundplus" target="_blank">
+                        <a href="https://shopee.co.id/universal-link/wundplusindonesia" target="_blank">
                             <img src="/imgs/shopee.png" alt="Shopee" />
                         </a>
-                        <a href="https://shopee.co.id/universal-link/wundplusindonesia" target="_blank">
+                        <a href="https://www.tiktok.com/@wundplus" target="_blank">
                             <img src="/imgs/tiktok.png" alt="Tiktop Shop" />
                         </a>
                     </div>
