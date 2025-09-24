@@ -28,15 +28,18 @@
                 "items": [
                     {
                         "label": "Regeneration Cream",
-                        "image": "/imgs/products/regeneration-cream.png"
+                        "image": "/imgs/products/regeneration-cream.png",
+                        "slug": "regeneration-cream"
                     },
                     {
                         "label": "Scar Gel",
-                        "image": "/imgs/products/scar-gel.png"
+                        "image": "/imgs/products/scar-gel.png",
+                        "slug": "scar-gel"
                     },
                     {
                         "label": "Wound Spray",
-                        "image": "/imgs/products/wound-spray.png"
+                        "image": "/imgs/products/wound-spray.png",
+                        "slug": "wound-spray"
                     }
                 ]
             }
@@ -127,17 +130,17 @@
                     },
                     {
                         "_id": "2",
-                        "image": "/imgs/articles/2.png",
+                        "image": "/imgs/articles/2.jpg",
                         "title": "Generasi baru untuk samarkan <strong>bekas luka</strong>"
                     },
                     {
                         "_id": "3",
-                        "image": "/imgs/articles/3.png",
+                        "image": "/imgs/articles/3.jpg",
                         "title": "Sembuhkan luka bakar dengan tuntas dan optimal dengan <strong>[wund] Regeneration Cream</strong>"
                     },
                     {
                         "_id": "4",
-                        "image": "/imgs/articles/4.png",
+                        "image": "/imgs/articles/4.jpg",
                         "title": "Solusi ampuh untuk <strong>atasi kulit kering</strong>"
                     }
                 ]

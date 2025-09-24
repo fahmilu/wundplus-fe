@@ -1,9 +1,7 @@
 "use client";
-import CTAs from "@/components/CTAs";
 export default function Footer() {
     return (
         <>
-            <CTAs />
             <footer>
                 <div className="container">
                     <div className="footer__content">

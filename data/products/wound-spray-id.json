@@ -1,0 +1,165 @@
+{
+    "title": "<span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">[wund]</span> Wound Spray",
+    "image": "/imgs/details/w-spray.png",
+    "components": [
+        {
+            "type": "banner",
+            "data": {
+                "title": "<span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">[wund]</span> Wound Spray",
+                "lead": "Bersihkan Luka,<br />Percepat Penyembuhan",
+                "description": "Efektif untuk membersihkan, melembapkan,<br /> dan mencegah infeksi luka.",
+                "banner": "/imgs/details/banner.jpg"
+            }
+        },
+        {
+            "type": "about",
+            "data": {
+                "title": "<span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">[wund]</span> Wound Spray",
+                "image": "/imgs/details/spray-2.png",
+                "description": "Mudah digunakan tanpa perlu dibilas, mempercepat penyembuhan, dan menghilangkan bau pada luka dengan kandungan inovatif asam hipoklorit (HOCl)!",
+                "list": [
+                    {
+                        "icon": "/imgs/details/about/1.png",
+                        "description": "Antimikroba dan mencegah pembentukan biofilm"
+                    },
+                    {
+                        "icon": "/imgs/details/about/2.png",
+                        "description": "Non-sitotoksik. Aman untuk digunakan sehari-hari."
+                    },
+                    {
+                        "icon": "/imgs/details/about/3.png",
+                        "description": "Cocok untuk semua jenis luka, luka bakar, dan ulkus kaki diabetik"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "advantage",
+            "data": {
+                "title": "Advantages of <br /> <strong>[wund]</strong> Wound Spray",
+                "image": "/imgs/details/img.jpg",
+                "description": "<ul><li>Dapat tetap berada di luka tanpa perlu dibilas (non-rinse)</li><li>Bebas kuman, pH netral, tidak bersifat sitotoksik, dan tidak menyebabkan iritasi</li><li>Hipotonik</li><li>Bebas dari logam berat</li><li>Mengurangi bau tidak sedap pada luka</li><li>Bebas alkohol</li><li>Pilihan utama untuk lavase peritoneal</li><li>Aman digunakan pada jaringan sistem saraf pusat (CNS), tulang rawan, dan tulang</li><li>Cocok untuk perawatan rongga dan fistula</li><li>Memiliki masa simpan 24 bulan dan 90 hari setelah dibuka</li><li>Tidak memerlukan prosedur khusus untuk pembuangan</li></ul>",
+                "clinical_data": {
+                    "title": "<span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Clinically Studied </span> Ingredients",
+                    "note": "*Uji coba dilakukan dalam kondisi tertentu, dan hasil dapat bervariasi pada setiap individu.",
+                    "list": [
+                        {
+                            "description": "<p>Mudah digunakan tanpa perlu dibilas, mempercepat penyembuhan, dan menghilangkan bau pada luka dengan kandungan inovatif asam hipoklorit (HOCl)!</p><p>Dengan aksi oksidasi yang kuat, HOCl mampu mengeliminasi bakteri, jamur, dan patogen lain tanpa merusak jaringan kulit sehat. Berbeda dengan mikroorganisme berbahaya, sel tubuh manusia secara alami terlindungi terhadap konsentrasi rendah HOCl. Hal ini membuat wund+™ Wound Spray aman sekaligus sangat efektif untuk perawatan luka.</p>",
+                            "image": "/imgs/details/clinical-data.jpg"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "fact-figure",
+            "data": {
+                "title": "Suitable for",
+                "items": [
+                    {
+                        "label": "Semua Jenis Luka Kronis",
+                        "image": "/imgs/details/suitable-for/1.png",
+                        "image_hover": "/imgs/details/suitable-for/1-hover.png",
+                        "description": "Termasuk luka kaki diabetik, luka tekan, luka vena di kaki, dan lainnya"
+                    },
+                    {
+                        "label": "Semua Jenis Luka Akut",
+                        "image": "/imgs/details/suitable-for/2.png",
+                        "image_hover": "/imgs/details/suitable-for/2-hover.png",
+                        "description": "Seperti luka sayatan, gigitan, robekan, dan lecet"
+                    },
+                    {
+                        "label": "Luka Operasi",
+                        "image": "/imgs/details/suitable-for/3.png",
+                        "image_hover": "/imgs/details/suitable-for/3-hover.png",
+                        "description": "TDapat digunakan untuk perawatan intraoperatif dan pascaoperasi"
+                    },
+                    {
+                        "label": "Jenis Luka Lainnya",
+                        "image": "/imgs/details/suitable-for/4.png",
+                        "image_hover": "/imgs/details/suitable-for/4-hover.png",
+                        "description": "Termasuk luka bakar (hingga derajat 2), ulkus akibat radiasi, fistula, dan abses"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "how-it-works",
+            "data": {
+                "title": "How It Works",
+                "list": [
+                    {
+                        "image": "/imgs/details/how/1.png",
+                        "title": "Mekanisme Antimikroba HOCl",
+                        "description": "HOCl bekerja sebagai agen oksidasi yang kuat dan efektif merusak struktur penting dalam sel mikroorganisme. Dengan menembus dinding sel, HOCl mengoksidasi protein, lipid, dan asam nukleat, sehingga mengganggu fungsi sel dan akhirnya menonaktifkan mikroba"
+                    },
+                    {
+                        "image": "/imgs/details/how/2.png",
+                        "title": "Kemampuan Menembus Biofilm dan Membran",
+                        "description": "Selain itu, HOCl juga mengganggu membran lipid dan matriks biofilm, memungkinkan zat ini menembus dan merusak perlindungan yang dimiliki mikroorganisme, meningkatkan efektivitasnya dalam membersihkan luka"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "how-it-works",
+            "data": {
+                "title": "How It Works",
+                "theme": "two",
+                "list": [
+                    {
+                        "image": "/imgs/details/how2/1.png",
+                        "title": "Mekanisme Antimikroba HOCl",
+                        "description": "Plant stem cells to protect skin stem cells"
+                    },
+                    {
+                        "image": "/imgs/details/how2/2.png",
+                        "title": "Kemampuan Menembus Biofilm dan Membran",
+                        "description": "Scar improvement through medical silicone"
+                    },
+                    {
+                        "image": "/imgs/details/how2/3.png",
+                        "title": "Kemampuan Menembus Biofilm dan Membran",
+                        "description": "Acceleration wound healing through stem cell"
+                    },
+                    {
+                        "image": "/imgs/details/how2/4.png",
+                        "title": "Kemampuan Menembus Biofilm dan Membran",
+                        "description": "Conceal through magic camouflage pigments"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "how-to-apply",
+            "data": {
+                "title": "How to Apply",
+                "list": [
+                    {
+                        "image": "/imgs/details/apply/1.png",
+                        "description": "Bersihkan luka dengan [wund] Wound Spray secara menyeluruh"
+                    },
+                    {
+                        "image": "/imgs/details/apply/2.png",
+                        "description": "Semprotkan dari jarak 15-30 cm langsung ke luka yang telah dibersihkan"
+                    },
+                    {
+                        "image": "/imgs/details/apply/3.png",
+                        "description": "Gunakan kain kompres yang telah dibasahi dengan larutan, lalu aplikasikan pada luka"
+                    },
+                    {
+                        "image": "/imgs/details/apply/4.png",
+                        "description": "Dapat dikombinasikan dengan perban luka standar untuk hasil optimal"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "comparison",
+            "data": {
+                "title": "Perbandingan",
+                "image": "/imgs/details/comparison.jpg"
+            }
+        }
+    ]
+}

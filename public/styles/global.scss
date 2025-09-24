@@ -36,7 +36,30 @@ a {
 }
 
 
+*[data-color="brand"] {
+    @apply text-wund-red font-bold;
+}
 
+
+.floating-wa {
+    @apply fixed bottom-5 right-5 z-50 flex flex-row items-center;
+
+    &__image {
+        @apply w-[70px] h-[70px] relative bg-[#4FCC5D] rounded-full;
+
+        img {
+            @apply w-[40px] h-[40px] object-contain absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 #{!important};
+        }
+    }
+
+    &__text {
+        @apply text-white text-[19px] font-medium bg-[#4FCC5D] py-[12px] px-[30px] rounded-r-full -ml-[30px];
+    }
+
+    &:hover {
+        @apply opacity-80;
+    }
+}
 
 @import "./partials/textstyles";
 @import "./partials/header";
@@ -44,3 +67,4 @@ a {
 @import "./partials/footer";
 
 @import "./components/home";
+@import "./components/product";

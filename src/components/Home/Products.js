@@ -45,7 +45,7 @@ const Products = ({ data }) => {
                             <div key={index} className="home-products__item">
                                 <Image src={item.image} alt={item.label} fill className="!w-full !h-auto !object-contain !relative" />
                                 <div className="btn-area">
-                                    <Link href={'/'} className="btn btn-primary">{item.label}</Link>
+                                    <Link href={`/${currentLocale}/${currentLocale === "en" ? "products" : "produk"}/${item.slug}`} className="btn btn-primary">{item.label}</Link>
                                 </div>
                             </div>
                         ))}

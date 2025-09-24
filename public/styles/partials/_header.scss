@@ -7,7 +7,7 @@
     }
 
     .container {
-        @apply flex justify-between items-center max-w-[100%] pw-pr-[116px] big:pr-[116px] px-4 relative z-10 h-full;
+        @apply flex justify-between items-center max-w-[100%] md:pw-px-[116px] big:px-[116px] px-4 relative z-10 h-full;
         
     }
 
