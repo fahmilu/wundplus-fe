@@ -11,13 +11,13 @@ export default async function LayoutBase({ children, locale }) {
 
     return (
         <TranslationsProvider locale={locale} namespaces={namespaces} resources={resources}>
-            <ReactLenis root>
+            {/* <ReactLenis root> */}
                 <Header locale={locale} />
                 <main>
                     {children}
                 </main>
                 <Footer />
-            </ReactLenis>
+            {/* </ReactLenis> */}
         </TranslationsProvider>
     );
 }

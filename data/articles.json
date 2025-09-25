@@ -1,0 +1,549 @@
+{
+    "articles": [
+        {
+            "id": "1",
+            "title": "The Curious Case of the Missing Semicolon",
+            "slug": "the-curious-case-of-the-missing-semicolon",
+            "hero_image": "/imgs/articles/card/1.jpg",
+            "lead": "A mysterious bug leaves developers scratching their heads.",
+            "is_featured": false,
+            "published_date": "2025-01-01",
+            "tags": [
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                },
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Essential Wound Care Tips for Daily Life",
+            "slug": "essential-wound-care-tips-for-daily-life",
+            "hero_image": "/imgs/articles/card/2.jpg",
+            "lead": "Learn the fundamental principles of proper wound healing and care.",
+            "is_featured": false,
+            "published_date": "2025-01-02",
+            "tags": [
+                {
+                    "id": "3",
+                    "name": "Wound Care",
+                    "slug": "wound-care"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Natural Beauty Secrets from Around the World",
+            "slug": "natural-beauty-secrets-from-around-the-world",
+            "hero_image": "/imgs/articles/card/3.jpg",
+            "lead": "Discover ancient beauty rituals that have stood the test of time.",
+            "is_featured": false,
+            "published_date": "2025-01-03",
+            "tags": [
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                },
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "The Science Behind Skin Regeneration",
+            "slug": "the-science-behind-skin-regeneration",
+            "hero_image": "/imgs/articles/card/4.jpg",
+            "lead": "Understanding how your body naturally repairs and renews skin cells.",
+            "is_featured": false,
+            "published_date": "2025-01-04",
+            "tags": [
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                },
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Wellness Trends That Actually Work",
+            "slug": "wellness-trends-that-actually-work",
+            "hero_image": "/imgs/articles/card/5.jpg",
+            "lead": "Evidence-based wellness practices for a healthier lifestyle.",
+            "is_featured": false,
+            "published_date": "2025-01-05",
+            "tags": [
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                },
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Product Spotlight: Advanced Healing Technology",
+            "slug": "product-spotlight-advanced-healing-technology",
+            "hero_image": "/imgs/articles/card/6.jpg",
+            "lead": "Exploring innovative solutions for faster wound recovery.",
+            "is_featured": false,
+            "published_date": "2025-01-06",
+            "tags": [
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                },
+                {
+                    "id": "3",
+                    "name": "Wound Care",
+                    "slug": "wound-care"
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Healthy Lifestyle Habits for Busy Professionals",
+            "slug": "healthy-lifestyle-habits-for-busy-professionals",
+            "hero_image": "/imgs/articles/card/1.jpg",
+            "lead": "Simple changes that can transform your daily routine and health.",
+            "is_featured": false,
+            "published_date": "2025-01-07",
+            "tags": [
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Beauty Ingredients That Really Make a Difference",
+            "slug": "beauty-ingredients-that-really-make-a-difference",
+            "hero_image": "/imgs/articles/card/2.jpg",
+            "lead": "A comprehensive guide to effective skincare components.",
+            "is_featured": false,
+            "published_date": "2025-01-08",
+            "tags": [
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                },
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "title": "The Complete Guide to Wound Prevention",
+            "slug": "the-complete-guide-to-wound-prevention",
+            "hero_image": "/imgs/articles/card/3.jpg",
+            "lead": "Proactive measures to keep your skin healthy and protected.",
+            "is_featured": true,
+            "published_date": "2025-01-09",
+            "tags": [
+                {
+                    "id": "3",
+                    "name": "Wound Care",
+                    "slug": "wound-care"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Wellness Through Mindful Living",
+            "slug": "wellness-through-mindful-living",
+            "hero_image": "/imgs/articles/card/4.jpg",
+            "lead": "How mindfulness practices can enhance your overall well-being.",
+            "is_featured": false,
+            "published_date": "2025-01-10",
+            "tags": [
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                },
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "title": "Revolutionary Product Innovations in Healthcare",
+            "slug": "revolutionary-product-innovations-in-healthcare",
+            "hero_image": "/imgs/articles/card/5.jpg",
+            "lead": "Breakthrough technologies changing the face of medical care.",
+            "is_featured": true,
+            "published_date": "2025-01-11",
+            "tags": [
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "title": "Beauty Routines for Every Skin Type",
+            "slug": "beauty-routines-for-every-skin-type",
+            "hero_image": "/imgs/articles/card/6.jpg",
+            "lead": "Personalized skincare approaches for optimal results.",
+            "is_featured": false,
+            "published_date": "2025-01-12",
+            "tags": [
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                },
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "title": "Lifestyle Changes That Boost Immunity",
+            "slug": "lifestyle-changes-that-boost-immunity",
+            "hero_image": "/imgs/articles/card/1.jpg",
+            "lead": "Natural ways to strengthen your body's defense system.",
+            "is_featured": true,
+            "published_date": "2025-01-13",
+            "tags": [
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "title": "Advanced Wound Care Techniques",
+            "slug": "advanced-wound-care-techniques",
+            "hero_image": "/imgs/articles/card/2.jpg",
+            "lead": "Professional methods for optimal healing outcomes.",
+            "is_featured": false,
+            "published_date": "2025-01-14",
+            "tags": [
+                {
+                    "id": "3",
+                    "name": "Wound Care",
+                    "slug": "wound-care"
+                },
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "title": "The Art of Natural Beauty Enhancement",
+            "slug": "the-art-of-natural-beauty-enhancement",
+            "hero_image": "/imgs/articles/card/3.jpg",
+            "lead": "Enhancing your natural features with gentle, effective methods.",
+            "is_featured": true,
+            "published_date": "2025-01-15",
+            "tags": [
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                },
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "title": "Wellness Products That Deliver Results",
+            "slug": "wellness-products-that-deliver-results",
+            "hero_image": "/imgs/articles/card/4.jpg",
+            "lead": "Evidence-based wellness solutions for modern living.",
+            "is_featured": false,
+            "published_date": "2025-01-16",
+            "tags": [
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                },
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "title": "Health-Focused Lifestyle Transformations",
+            "slug": "health-focused-lifestyle-transformations",
+            "hero_image": "/imgs/articles/card/5.jpg",
+            "lead": "Real stories of people who changed their lives through health.",
+            "is_featured": false,
+            "published_date": "2025-01-17",
+            "tags": [
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                },
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "title": "Innovative Wound Healing Solutions",
+            "slug": "innovative-wound-healing-solutions",
+            "hero_image": "/imgs/articles/card/6.jpg",
+            "lead": "Cutting-edge approaches to faster, better healing.",
+            "is_featured": false,
+            "published_date": "2025-01-18",
+            "tags": [
+                {
+                    "id": "3",
+                    "name": "Wound Care",
+                    "slug": "wound-care"
+                },
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                }
+            ]
+        },
+        {
+            "id": "19",
+            "title": "Beauty Trends That Are Here to Stay",
+            "slug": "beauty-trends-that-are-here-to-stay",
+            "hero_image": "/imgs/articles/card/1.jpg",
+            "lead": "Timeless beauty practices that never go out of style.",
+            "is_featured": false,
+            "published_date": "2025-01-19",
+            "tags": [
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                },
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                }
+            ]
+        },
+        {
+            "id": "20",
+            "title": "Holistic Wellness Approaches",
+            "slug": "holistic-wellness-approaches",
+            "hero_image": "/imgs/articles/card/2.jpg",
+            "lead": "Integrating mind, body, and spirit for complete well-being.",
+            "is_featured": false,
+            "published_date": "2025-01-20",
+            "tags": [
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "21",
+            "title": "Product Reviews: What Really Works",
+            "slug": "product-reviews-what-really-works",
+            "hero_image": "/imgs/articles/card/3.jpg",
+            "lead": "Honest assessments of popular health and beauty products.",
+            "is_featured": false,
+            "published_date": "2025-01-21",
+            "tags": [
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                },
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                }
+            ]
+        },
+        {
+            "id": "22",
+            "title": "Lifestyle Medicine: Prevention Over Cure",
+            "slug": "lifestyle-medicine-prevention-over-cure",
+            "hero_image": "/imgs/articles/card/4.jpg",
+            "lead": "How lifestyle choices can prevent health issues before they start.",
+            "is_featured": false,
+            "published_date": "2025-01-22",
+            "tags": [
+                {
+                    "id": "2",
+                    "name": "Lifestyle",
+                    "slug": "lifestyle"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "23",
+            "title": "Wound Care Myths Debunked",
+            "slug": "wound-care-myths-debunked",
+            "hero_image": "/imgs/articles/card/5.jpg",
+            "lead": "Separating fact from fiction in wound healing practices.",
+            "is_featured": true,
+            "published_date": "2025-01-23",
+            "tags": [
+                {
+                    "id": "3",
+                    "name": "Wound Care",
+                    "slug": "wound-care"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        },
+        {
+            "id": "24",
+            "title": "Beauty From Within: Nutrition and Skin Health",
+            "slug": "beauty-from-within-nutrition-and-skin-health",
+            "hero_image": "/imgs/articles/card/6.jpg",
+            "lead": "How what you eat affects your skin's appearance and health.",
+            "is_featured": false,
+            "published_date": "2025-01-24",
+            "tags": [
+                {
+                    "id": "4",
+                    "name": "Beauty",
+                    "slug": "beauty"
+                },
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                }
+            ]
+        },
+        {
+            "id": "25",
+            "title": "Wellness Technology: Apps and Gadgets",
+            "hero_image": "/imgs/articles/card/1.jpg",
+            "lead": "Modern tools to track and improve your wellness journey.",
+            "is_featured": true,
+            "published_date": "2025-01-25",
+            "tags": [
+                {
+                    "id": "5",
+                    "name": "Wellness",
+                    "slug": "wellness"
+                },
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                }
+            ]
+        },
+        {
+            "id": "26",
+            "title": "The Future of Personalized Healthcare Products",
+            "hero_image": "/imgs/articles/card/2.jpg",
+            "lead": "How customization is revolutionizing health and beauty products.",
+            "is_featured": false,
+            "published_date": "2025-01-26",
+            "tags": [
+                {
+                    "id": "6",
+                    "name": "Product",
+                    "slug": "product"
+                },
+                {
+                    "id": "1",
+                    "name": "Health",
+                    "slug": "health"
+                }
+            ]
+        }
+    ],
+    "language": "id"
+}

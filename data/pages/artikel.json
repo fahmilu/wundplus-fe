@@ -1,0 +1,12 @@
+{
+   "title": "Percepat Penyembuhan Luka dengan [wund]",
+   "description": "Tips dan info menarik seputar perawatan luka dan kulit",
+   "image": "/imgs/articles/card/6.jpg",
+    "list": [
+        {
+            "title": "Artikel 1",
+            "description": "Artikel 1",
+            "image": "/imgs/artikel/5.jpg"
+        }
+    ]
+}

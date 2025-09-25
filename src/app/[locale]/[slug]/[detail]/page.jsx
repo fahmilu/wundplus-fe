@@ -1,7 +1,7 @@
 import LayoutBase from "@/components/LayoutBase";
 import DetailPage from "@/components/DetailPage";
 import { redirect } from "next/navigation";
-import { getProductDataByLocalizedSlug } from "@/utils/pageData";
+import { getProductDataByLocalizedSlug, getArticleDetailData } from "@/utils/pageData";
 export default async function Page({ params }) {
     const { locale, slug, "detail": detailSlug } = await params;
     
@@ -19,8 +19,11 @@ export default async function Page({ params }) {
         data = await getProductDataByLocalizedSlug(detailSlug, locale);
     }
 
-    console.log(data);
-    
+    if((slug === 'articles' || slug === 'artikel') && detailSlug) {
+        const articleDetailData = await getArticleDetailData(detailSlug, locale);
+        data = articleDetailData.data;
+    }
+
     return (
         <LayoutBase locale={locale}>
             {data && <DetailPage slug={pageSlug} data={data} />}

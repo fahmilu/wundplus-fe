@@ -1,0 +1,77 @@
+{
+    "success": true,
+    "message": "Article detail retrieved successfully",
+    "data": {
+      "id": 2,
+      "title": "How to Treat Chickenpox Scars",
+      "slug": "how-to-treat-chickenpox-scars",
+      "lead": "Pelajari Laravel dari dasar hingga mahir dengan panduan lengkap ini.",
+      "hero_image": "/imgs/articles/ch.jpg",
+      "published_date": "2025-09-25",
+      "meta_title": "Complete Laravel Guide - Learn PHP Framework",
+      "meta_description": "Master Laravel with our comprehensive guide covering installation, routing, controllers, and more.",
+      "reference": "https://www.google.com",
+      "tags": [
+        {
+          "id": 2,
+          "name": "Teknologi",
+          "slug": "teknologi"
+        },
+        {
+          "id": 3,
+          "name": "Tutorial",
+          "slug": "tutorial"
+        }
+      ],
+      "created_at": "2025-09-25 05:03:54",
+      "updated_at": "2025-09-25 05:03:54",
+      "content": [
+        {
+          "type": "quote",
+          "content": "Chickenpox is a condition that almost everyone experiences, usually during childhood. Although it only happens once in a lifetime, <span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">chickenpox can leave behind unwanted “marks” scars.</span>"
+        },
+        {
+          "type": "paragraph-with-image",
+          "image_position": "left",
+          "title": "Why Do Scars Appear?",
+          "content": "<p>When your body heals after an injury, it forms new skin tissue to cover the wound. However, if the wound is deep or the skin is damaged, the healing process can leave behind scars. Scars are a natural part of the healing process, but they can be unsightly and sometimes painful.</p><p>There are several factors that contribute to the appearance of scars:</p><ul><li><p>Deep or large wounds</p></li><li><p>Poor healing</p></li><li><p>Infection</p></li><li><p>Hypertrophic scars</p></li></ul><p>Hypertrophic scars are a type of scar that occurs when the body overproduces collagen after an injury. This can cause the scar to be raised and red, and it can be painful.</p>",
+          "image": "/imgs/articles/card/1.jpg"
+        },
+        {
+            "type": "paragraph-with-image",
+            "image_position": "right",
+            "title": "Do Chickenpox Scars Go Away?",
+            "content": "<p>Yes, chickenpox scars usually fade away over time. However, the process can take several months or even years, depending on the severity of the scar and the individual’s skin type. Some scars may fade completely, while others may remain visible.</p>",
+            "image": "/imgs/articles/card/3.jpg"
+        },
+        {
+            "type": "paragraph-with-image",
+            "image_position": "right",
+            "title": "Do Chickenpox Scars Go Away?",
+            "content": "<p>Yes, chickenpox scars usually fade away over time. However, the process can take several months or even years, depending on the severity of the scar and the individual’s skin type. Some scars may fade completely, while others may remain visible.</p>",
+            "image": "/imgs/articles/card/3.jpg"
+        },
+        {
+            "type": "paragraph",
+            "title": "Treatments to Fade Chickenpox Scars",
+            "content": "<p>There are several treatments available to help fade chickenpox scars:</p><ul><li><p>Laser therapy</p></li><li><p>Chemical peels</p></li><li><p>Topical creams</p></li><li><p>Vitamin C</p></li></ul><p>The best treatment for you will depend on the severity of your scar and your skin type.</p>"
+        },
+        {
+            "type": "paragraph",
+            "title": "Chickenpox Scar Care with [wund] Scar Gel",
+            "content": ""
+        },
+        {
+            "type": "single-image",
+            "title": "Chickenpox Scar Care with [wund] Scar Gel",
+            "image": "/imgs/articles/card/4.jpg"
+        },
+        {
+            "type": "paragraph",
+            "title": "",
+            "content": "<p>[wund] Scar Gel is a topical cream that contains ingredients to help fade chickenpox scars. It is made with natural ingredients and is safe for all skin types.</p><p>To use [wund] Scar Gel, apply it to the scar twice a day. You should see results in 4-6 weeks.</p><p>You can also combine [wund] Scar Gel with other treatments to help fade chickenpox scars.</p>"
+        }
+      ]
+    },
+    "language": "id"
+  }
