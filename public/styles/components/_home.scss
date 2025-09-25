@@ -284,8 +284,16 @@
                 &__item {
                     @apply cursor-pointer md:px-[36px] px-[20px] py-[20px] rounded-xl bg-[#F2F2F2] text-[#414042]/60 md:pw-text-[28px] big:text-[28px] text-[16px] leading-[1.2] transition-all duration-300 ease-in-out hover:text-wund-black;
 
+                    *[data-color="brand"] {
+                        @apply text-[#414042]/60 font-bold;
+                    }
+
                     &.active {
                         @apply bg-wund-red text-white;
+
+                        *[data-color="brand"] {
+                            @apply text-white font-bold;
+                        }
                     }
 
                     &__image {
@@ -363,11 +371,7 @@
                         }
 
                         &__description {
-                            @apply lg:text-[30px] sm:text-[20px] text-[16px] leading-[1.5] relative;
-
-                            strong {
-                                @apply text-wund-red;
-                            }
+                            @apply lg:text-[30px] sm:text-[20px] text-[16px] leading-[1.5] relative flex;
                         }
                     }
 
@@ -435,10 +439,6 @@
 
                 &__description {
                     @apply md:pw-text-[25px] big:text-[25px] leading-[1.2] text-center;
-
-                    strong {
-                        @apply font-bold text-wund-red;
-                    }
                 }
             }
         }

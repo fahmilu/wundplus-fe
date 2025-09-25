@@ -14,8 +14,8 @@
         {
             "type": "home-about",
             "data": {
-                "title": "<strong>Dari Hati</strong><br /> dengan Inovasi",
-                "description": "<strong><p>wund+™ adalah produk inovatif untuk</strong> perawatan diri dari GWS Wellness. Formulasinya dikhususkan untuk perawatan luka, mulai dari proteksi, rawat, sembuh dan samarkan. Mengedepankan pengembangan kandungankandungan alami, wund+™ hadir sebagai solusi perawatan yang lembut dan cocok untuk segala usia serta berbagai jenis kulit.</p>",
+                "title": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Dari Hati</span><br>dengan Inovasi</p>",
+                "description": "<p>[wund] adalah produk inovatif untuk perawatan diri dari GWS Wellness. Formulasinya dikhususkan untuk perawatan luka, mulai dari proteksi, rawat, sembuh dan samarkan. Mengedepankan pengembangan kandungan alami, [wund] hadir sebagai solusi perawatan yang lembut dan cocok untuk segala usia serta berbagai jenis kulit.</p>",
                 "image": "/imgs/about-bg.jpg",
                 "image_mobile": "/imgs/about-mobile.jpg",
                 "image_icon": "/imgs/logos.png"
@@ -45,9 +45,9 @@
             }
         },
         {
-            "type": "home-suitable-for",
+            "type": "home-usage",
             "data": {
-                "title": "<strong>[wund]</strong> Cocok untuk Tangani Berbagai Luka dan Kondisi Kulit",
+                "title": "<p>[wund] Cocok untuk Tangani Berbagai Luka dan Kondisi Kulit</p>",
                 "items": [
                     {
                         "label": "Semua Jenis Luka Kronis",
@@ -83,22 +83,22 @@
         {
             "type": "home-side-image",
             "data": {
-                "title": "<strong>Tahukah</strong> Kamu?",
+                "title": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Tahukah</span> Kamu?</p>",
                 "list": [
                     {
                         "image": "/imgs/side-image/1.jpg",
-                        "description": "<strong>Perlindungan 24 Jam</strong> untuk tangkal <b>mikroba</b> dan jaga <b>kelembapan kulit</b> dengan <b>wund+™ Regeneration Cream</b>",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Perlindungan 24 Jam</span> untuk tangkal <strong>mikroba</strong> dan jaga <strong>kelembapan kulit</strong> dengan [wund] <strong>Regeneration Cream</strong></p>",
                         "image_description": "/imgs/side-image/1-desc.png"
                     },
                     {
                         "image": "/imgs/side-image/2.jpg",
-                        "description": "<strong>orang dengan diabetes</strong> merasakan perbaikan kulit hanya dalam 1 jam setelah penggunaan <b>wund+™ Regeneration Cream</b>",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">orang dengan diabetes</span> merasakan perbaikan kulit hanya dalam 1 jam setelah penggunaan [wund] <strong>Regeneration Cream</strong></p>",
                         "image_description": "/imgs/side-image/2-desc.png"
                     },
                     {
                         "image": "/imgs/side-image/3.jpg",
                         "title": "HOCl dalam wund+™ Wound Spray",
-                        "description": "<ul><li><strong>2x lebih efektif</strong> kurangi pertumbuhan mikroba dibanding PVI</li><li><strong>Efektif hilangkan bau</strong> luka hingga 100%</li><li><strong>Terbukti secara klinis 75% lebih efektif</strong> atasi Ulkus Kaki Diabetik ringan dalam 2 minggu</li></ul>"
+                        "description": "<ul><li><p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">2x lebih efektif</span> kurangi pertumbuhan mikroba dibanding PVI</p></li><li><p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Efektif hilangkan bau</span> luka hingga 100%</p></li><li><p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Terbukti secara klinis 75% lebih efektif</span> atasi Ulkus Kaki Diabetik ringan dalam 2 minggu</p></li></ul>"
                     }
                 ]
             }
@@ -109,11 +109,11 @@
                 "list": [
                     {
                         "image": "/imgs/facts/1.png",
-                        "description": "<strong>62% luka diabetik parah</strong> membaik dalam satu minggu dengan HOCl yang ada <b>dalam wund+™ Wound Spray</b>"
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">62% luka diabetik parah</span> membaik dalam satu minggu dengan HOCl yang ada dalam [wund] <strong>Wound Spray</strong></p>"
                     },
                     {
                         "image": "/imgs/facts/2.png",
-                        "description": "<strong>Centella Reversa dalam wund+™ Scar Gel 72%</strong> lebih efektif mempercepat proses  <b>penyembuhan dan penyamaran luka</b>"
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Centella Reversa dalam wund+™ Scar Gel 72%</span> lebih efektif mempercepat proses  <strong>penyembuhan dan penyamaran luka</strong></p>"
                     }
                 ]
             }
@@ -126,76 +126,76 @@
                     {
                         "_id": "1",
                         "image": "/imgs/articles/1.png",
-                        "title": "Hilangkan <strong>bekas jerawat</strong> dengan <strong>[wund]</strong> Scar Gel"
+                        "title": "<p>Hilangkan <span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">bekas jerawat</span> dengan [wund] Scar Gel</p>"
                     },
                     {
                         "_id": "2",
                         "image": "/imgs/articles/2.jpg",
-                        "title": "Generasi baru untuk samarkan <strong>bekas luka</strong>"
+                        "title": "<p>Generasi baru untuk samarkan <span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">bekas luka</span></p>"
                     },
                     {
                         "_id": "3",
                         "image": "/imgs/articles/3.jpg",
-                        "title": "Sembuhkan luka bakar dengan tuntas dan optimal dengan <strong>[wund] Regeneration Cream</strong>"
+                        "title": "<p>Sembuhkan luka bakar dengan tuntas dan optimal dengan [wund] <span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Regeneration Cream</span></p>"
                     },
                     {
                         "_id": "4",
                         "image": "/imgs/articles/4.jpg",
-                        "title": "Solusi ampuh untuk <strong>atasi kulit kering</strong>"
+                        "title": "<p>Solusi ampuh untuk <span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">atasi kulit kering</span></p>"
                     }
                 ]
             }
         },
         {
-            "type": "home-testimonials",
+            "type": "home-reviews",
             "data": {
-                "title": "Gabung <strong>[wund]</strong> dalam mempercepat penyembuhan lukamu!",
+                "title": "<p>Gabung [wund] dalam mempercepat penyembuhan lukamu!</p>",
                 "list": [
                     {
                         "_id": "1",
                         "image": "/imgs/testimonials/1.jpg",
                         "name": "dr. Anton Budi Asih",
                         "role": "dokter umum",
-                        "description": "<strong>[wund] Regeneration Cream</strong> mengandung antiradang kulit, antibakteri, dan vitamin, juga pelembap alami yang bisa memperbaiki hidrasi kulit. Juga, mampu melindungi skin barrier. MicroSilver dalam krim ini mampu mengatasi bakteri dan menstabilkan flora normal di kulit."
+                        "description": "<p>[wund] <span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Regeneration Cream</span> mengandung antiradang kulit, antibakteri, dan vitamin, juga pelembab alami yang bisa memperbaiki hidrasi kulit. Juga, mampu melindungi skin barrier. MicroSilver dalam krim ini mampu mengatasi bakteri dan menstabilkan flora normal di kulit.</p>"
                     },
                     {
                         "_id": "2", 
                         "image": "/imgs/testimonials/2.jpg",
-                        "name": "dr. Heru Soedjadi",
-                        "role": "dokter spesialis dermatologi",
-                        "description": "<strong>[wund] Scar Gel</strong> dapat membantu mengatasi luka bakar, karena dapat menstimulasi produksi kolagen dan elastin, serta membantu menutrisi dan mengisi kulit luka bakar."
+                        "name": "Ns. Eka Putri Yulianti",
+                        "role": "Perawat dengan spesialisasi perawatan luka dan psikiatri",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Dari 500-an riset</span>, sepakat (mengatakan) bahwa HOCl itu memang yang paling bagus dibandingkan disinfektan yang lain (seperti Octenidine dan PHMB). Aku berharap masyarakat Indonesia lebih kenal (dengan) HOCl sekarang.</p>"
                     },
                     {
                         "_id": "3",
                         "image": "/imgs/testimonials/3.jpg",
-                        "name": "dr. Zulfi Rahman",
-                        "role": "dokter spesialis fisioterapi",
-                        "description": "<strong>[wund] Wound Spray</strong> dapat meningkatkan produksi kolagen dan elastin, serta membantu menutrisi dan mengisi kulit luka bakar."
+                        "name": "dr. Yuliardy Limengk",
+                        "role": "Testimoni dokter bedah vaskular",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">(Kandungan) Hypochlorus Acid</span> ini salah satu yang bisa mencuci luka, tapi tidak mengganggu proses penyembuhan dan bisa menghancurkan biofilm (yang menghambat penyembuhan).</p>"
                     }
                 ]
             }
         },
         {
-            "type": "home-trusted-by",
+            "type": "home-metrics",
             "data": {
                 "list": [
                     {
-                        "label": "Dipercayai oleh",
                         "image": "/imgs/trusted-by/1.png",
                         "count": "100+",
-                        "description": "<strong>Rumah sakit</strong>, termasuk rumah sakit tipe A"
+                        "title": "<p><strong>Dipercayai</strong> oleh</p>",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Rumah sakit</span>, termasuk rumah sakit tipe A</p>"
                     },
                     {
-                        "label": "Diandalkan oleh",
                         "image": "/imgs/trusted-by/2.png",
                         "count": "400+",
-                        "description": "<strong>Dokter</strong>  dari berbagai  spesialisasi"
+                        "title": "<p><strong>Diandalkan</strong> oleh</p>",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Dokter</span> dari berbagai spesialisasi</p>"
                     },
                     {
-                        "label": "Digunakan oleh",
                         "image": "/imgs/trusted-by/3.png",
                         "count": "2000+",
-                        "description": "<strong>Pasein</strong> untuk berbagai jenis luka dan semua tipe kulit"
+                        "title": "<p><strong>Digunakan</strong> oleh</p>",
+                        "description": "<p><span data-color=\"brand\" class=\"color\" style=\"--color: brand; --dark-color: brand\">Pasien</span> dengan berbagai jenis luka dan semua tipe kulit</p>"
                     }
                 ]
             }

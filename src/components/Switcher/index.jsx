@@ -17,7 +17,7 @@ const Switcher = ({ type, data }) => {
             return <HomeAbout data={data} />;
         case 'home-product':
             return <HomeProducts data={data} />;
-        case 'home-suitable-for':
+        case 'home-usage':
             return <HomeSuitableFor data={data} />;
         case 'home-side-image':
             return <HomeSideImage data={data} />;
@@ -25,9 +25,9 @@ const Switcher = ({ type, data }) => {
             return <HomeFacts data={data} />;
         case 'home-articles':
             return <HomeArticles data={data} />;
-        case 'home-testimonials':
+        case 'home-reviews':
             return <HomeTestimonials data={data} />;
-        case 'home-trusted-by':
+        case 'home-metrics':
             return <HomeTrustedBy data={data} />;
         default:
             return null;

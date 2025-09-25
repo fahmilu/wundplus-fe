@@ -27,19 +27,24 @@ a {
     @apply max-w-[1440px] mx-auto px-4 md:pw-px-[65px] big:px-[65px];
 }
 
-.label-title {
-    @apply bg-wund-red text-white pw-pr-[120px] big:pr-[120px] pw-pl-[65px] big:pl-[65px] pw-py-[40px] big:py-[40px] pw-rounded-ee-[100px] big:rounded-ee-[100px] pw-text-[56px] big:text-[56px] leading-[1.2] font-light absolute top-0 left-0;
 
-    strong {
-        @apply font-bold;
-    }
-}
 
 
 *[data-color="brand"] {
     @apply text-wund-red font-bold;
 }
 
+.label-title {
+    @apply bg-wund-red text-white pw-pr-[120px] big:pr-[120px] pw-pl-[65px] big:pl-[65px] pw-py-[40px] big:py-[40px] pw-rounded-ee-[100px] big:rounded-ee-[100px] pw-text-[56px] big:text-[56px] leading-[1.2] font-light absolute top-0 left-0;
+
+    strong {
+        @apply font-bold;
+    }
+
+    *[data-color="brand"] {
+        @apply text-white font-bold;
+    }
+}
 
 .floating-wa {
     @apply fixed bottom-5 right-5 z-50 flex flex-row items-center;

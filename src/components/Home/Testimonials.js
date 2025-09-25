@@ -58,13 +58,13 @@ const Testimonials = ({ data }) => {
                                 <div className="slick-slide__content__header">
                                     <div className="slick-slide__content__header__content">
                                         <div className="slick-slide__content__header__content__name">{item.name}</div>
-                                        <p className="slick-slide__content__header__content__role">{currentLocale === "en" ? item.role : "Testimoni " + item.role}</p>
+                                        <p className="slick-slide__content__header__content__role">{item.role}</p>
                                     </div>
                                     <div className="slick-slide__content__header__avatar">
                                         <Image src={item.image} alt={item.name} fill />
                                     </div>
                                 </div>
-                                <div className="slick-slide__content__description" dangerouslySetInnerHTML={{ __html: replaceText(`“${item.description}”`) }} />
+                                <div className="slick-slide__content__description" dangerouslySetInnerHTML={{ __html: replaceText(`${item.description}`) }} />
                             </div>
                         ))} 
                     </Slider>

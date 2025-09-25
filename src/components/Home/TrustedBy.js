@@ -9,9 +9,7 @@ const TrustedBy = ({ data }) => {
                     {data.list.map((item, index) => (
                         <div key={index} className="home-trusted-by__items__item" data-aos="fade-up" data-aos-delay={index * 100}>
                             <TextAnimation delay={0.1}>
-                                <div className="home-trusted-by__items__item__label">
-                                {item.label}
-                                </div>
+                                <div className="home-trusted-by__items__item__label" dangerouslySetInnerHTML={{ __html: replaceText(item.title) }} />
                             </TextAnimation>
                             <div className="home-trusted-by__items__item__content">
                                 <div className="home-trusted-by__items__item__image">
