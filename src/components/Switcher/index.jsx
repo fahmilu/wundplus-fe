@@ -8,6 +8,7 @@ import HomeFacts from '../Home/Facts';
 import HomeArticles from '../Home/Articles';
 import HomeTestimonials from '../Home/Testimonials';
 import HomeTrustedBy from '../Home/TrustedBy';
+import ContactForm from '../Form/Contact';
 const Switcher = ({ type, data }) => {
     console.log(type);
     switch (type) {
@@ -29,6 +30,8 @@ const Switcher = ({ type, data }) => {
             return <HomeTestimonials data={data} />;
         case 'home-metrics':
             return <HomeTrustedBy data={data} />;
+        case 'contact-form':
+            return <ContactForm title={data.title} />;
         default:
             return null;
     }

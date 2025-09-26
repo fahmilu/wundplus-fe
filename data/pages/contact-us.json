@@ -1,0 +1,11 @@
+{
+    "title": "Contact Us",
+    "components": [
+        {
+            "type": "contact-form",
+            "data": {
+                "title": "Contact Us"
+            }
+        }
+    ]
+}

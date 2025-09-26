@@ -22,7 +22,7 @@ const ProductsBanner = ({ dataParent, data }) => {
                         </div>
                         <h2 dangerouslySetInnerHTML={{ __html: replaceText(dataParent.title) }} />
                     </div>
-                    <img src={'/imgs/details/rec-by.png'} className="w-[228px] h-auto block" alt={'recommended product'} />
+                    <img src={'/imgs/details/rec-by.png'} className="sm:w-[228px] w-full h-auto block" alt={'recommended product'} />
                 </div>
             </section>
         </>

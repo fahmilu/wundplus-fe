@@ -2,8 +2,9 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import ArticlesCardLandscape from "./CardLandscape";
+import ArticlesCard from "./Card";
 
-const Featured = ({ data }) => {
+const Featured = ({ data, isLandscape = false, title = 'Artikel Pilihan' }) => {
     const listRef = useRef(null);
     const containerRef = useRef(null);
 
@@ -83,11 +84,11 @@ const Featured = ({ data }) => {
 
     return (
         <div className="articles-featured">
-            <h3 data-color="brand">Artikel Pilihan</h3>
+            <h3 data-color="brand">{title}</h3>
             <div className="articles-featured__container" ref={containerRef}>
                 <div className="articles-featured__list" ref={listRef}>
                     {data.map((item) => (
-                        <ArticlesCardLandscape key={item.id} article={item} />
+                        isLandscape ? <ArticlesCardLandscape key={item.id} article={item} /> : <ArticlesCard key={item.id} article={item} />
                     ))}
                 </div>
             </div>

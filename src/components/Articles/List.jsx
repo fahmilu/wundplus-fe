@@ -79,15 +79,15 @@ const ArticlesList = ({ articles = [] }) => {
     return (
         <section className="articles-list">
             <div className="container">
-                <div className="flex justify-between items-center mb-4">
+                <div className="flex flex-col md:flex-row justify-between sm:items-center gap-y-4 mb-4">
                     <h3 data-color="brand">Artikel</h3>
                     {/* Sort Controls */}
-                    <div className="flex items-center space-x-2">
-                        <span className="text-sm text-gray-600">Sort by date:</span>
-                        <div className="flex shadow-lg rounded-full overflow-hidden">
+                    <div className="flex flex-col md:flex-row sm:items-center sm:space-x-2 space-y-2">
+                        <span className="text-sm text-gray-600 sm:block hidden">Sort by date:</span>
+                        <div className="flex w-full shadow-lg rounded-full overflow-hidden">
                             <button
                                 onClick={() => handleSortChange('desc')}
-                                className={`px-4 py-2 text-base ${
+                                className={`px-4 py-2 flex-1 text-base ${
                                     sortOrder === 'desc'
                                         ? 'bg-wund-red text-white'
                                         : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -97,7 +97,7 @@ const ArticlesList = ({ articles = [] }) => {
                             </button>
                             <button
                                 onClick={() => handleSortChange('asc')}
-                                className={`px-4 py-2 text-base border-l ${
+                                className={`px-4 py-2 flex-1 text-base border-l ${
                                     sortOrder === 'asc'
                                         ? 'bg-wund-red text-white'
                                         : 'bg-white text-gray-700 hover:bg-gray-100'

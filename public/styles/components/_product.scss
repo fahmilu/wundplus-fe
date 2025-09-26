@@ -1,6 +1,6 @@
 .product {
     &-banner {
-        @apply bg-wund-black w-full relative md:aspect-[1440/798] md:h-auto h-[560px];
+        @apply bg-wund-black w-full relative md:aspect-[1440/798] md:h-auto h-[auto];
 
         &__image {
             @apply w-full h-full absolute top-0 left-0;
@@ -19,14 +19,14 @@
         }
 
         .container {
-            @apply flex flex-col justify-start pt-[80px] items-start h-full relative z-10;
+            @apply flex flex-col justify-start pt-[80px] md:pb-[80px] pb-[150px] items-start h-full relative z-10;
         }
 
         &__content {
             @apply relative z-10 max-w-[600px] flex flex-col gap-y-[26px];
 
             h2 {
-                @apply text-wund-red font-bold;
+                @apply text-wund-red font-bold leading-[1.2];
             }
         }
     }
@@ -34,22 +34,23 @@
     &-product-header {
         background: linear-gradient(90deg, #FFF 0%, #FBFAF8 29%, #F7F6F2 46%, #EEEBE3 68%, #E5E1D4 83%);
         &__content {
-            @apply flex flex-row gap-[20px]
+            @apply flex min-[480px]:flex-row flex-col gap-[20px] gap-y-[40px];
+            
         }
 
         &__image {
-            @apply md:pw-min-w-[492px] min-w-[128px] big:min-w-[492px] relative;
+            @apply md:pw-min-w-[492px] sm:max-w-[unset] sm:h-auto h-[60px] max-w-[180px] min-w-[180px] big:min-w-[492px] relative;
 
             img {
-                @apply w-full h-auto object-contain absolute top-[unset] bottom-[-60px] left-0 #{!important};
+                @apply w-full h-auto object-contain absolute top-[unset] md:bottom-[-60px] bottom-[-30px] left-0 #{!important};
             }
         }
         .container {
-            @apply flex flex-row justify-between pt-[37px] pb-[40px] items-end;
+            @apply flex md:flex-row flex-col sm:gap-y-[40px] gap-y-[20px] justify-between pt-[37px] pb-[40px] md:items-end items-start;
             
             h2 {
                 span {
-                    @apply block;
+                    @apply md:block;
                 }
             }
         }
@@ -57,11 +58,11 @@
 
     &-about {
         .container {
-            @apply flex flex-row-reverse justify-between pt-[137px] pb-[80px] items-start;
+            @apply flex md:flex-row-reverse flex-col-reverse justify-between sm:pt-[137px] pt-[60px] sm:pb-[80px] pb-[60px] gap-y-[40px] items-start;
         }
 
         &__image {
-            @apply relative md:pw-min-w-[449px] big:min-w-[449px] min-w-[300px] h-auto;
+            @apply relative max-md:max-w-[180px] max-md:mx-auto md:pw-min-w-[449px] big:min-w-[449px] min-w-[300px] h-auto;
 
             img {
                 @apply w-full h-auto relative #{!important};
@@ -86,7 +87,7 @@
                 @apply flex flex-row items-center;
 
                 &__icon {
-                    @apply relative w-[90px] h-[90px] border border-wund-red bg-white rounded-full z-10;
+                    @apply relative sm:min-w-[90px] min-w-[60px] aspect-square border border-wund-red bg-white rounded-full z-10;
 
                     img {
                         @apply w-[60%] h-[60%] object-contain absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 #{!important};
@@ -94,7 +95,7 @@
                 }
 
                 &__text {
-                    @apply flex-grow bg-gradient-to-r bg-white -ml-[20px] relative rounded-full min-h-[98px] flex items-center py-[20px] px-[50px];
+                    @apply flex-grow bg-gradient-to-r bg-white -ml-[20px] relative rounded-full sm:min-h-[98px] min-h-[70px] flex items-center sm:py-[20px] py-[10px] sm:px-[50px] px-[30px];
                     &:before {
                         content: '';
                         @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%+2px)] h-[calc(100%+2px)]  bg-gradient-to-r from-wund-red to-wund-red/0  rounded-full z-[-1];
@@ -110,7 +111,7 @@
 
     &-advantage {
         .container {
-            @apply relative md:pw-pt-[265px] big:pt-[265px] pt-[180px] pb-[180px] items-start;
+            @apply relative md:pw-pt-[265px] big:pt-[265px] pt-[140px] md:pb-[180px] pb-[60px] items-start;
         }
 
         &__image {
@@ -121,7 +122,7 @@
             &__description {
 
                 ul {
-                    @apply list-disc list-outside pl-4 columns-2;
+                    @apply list-disc list-outside pl-4 md:columns-2;
                     column-gap: 120px;
 
                     li {
@@ -131,17 +132,19 @@
             }
 
             &__clinical-data {
-                @apply mt-[100px] flex flex-col gap-[50px] bg-[#FBFAF8] border border-wund-red rounded-[35px] py-[50px] px-[70px];
+                @apply md:mt-[100px] mt-[60px] flex flex-col gap-[50px] bg-[#FBFAF8] border border-wund-red rounded-[35px] md:py-[50px] py-[30px] md:px-[70px] px-[30px];
 
                 &__title {
                     @apply border-b border-wund-red pb-[20px] text-center;
                 }
-
+                &__contents {
+                    @apply flex flex-col gap-[50px];
+                }
                 &__content {
-                    @apply flex flex-row justify-between gap-[100px];
+                    @apply flex md:flex-row flex-col items-center justify-between md:gap-[100px] gap-[40px];
 
                     &__image {
-                        @apply relative h-auto w-[30%];
+                        @apply relative h-auto md:w-[30%] max-w-[80%];
 
                         img {
                             @apply w-full h-full object-contain relative #{!important};
@@ -149,7 +152,7 @@
                     }
 
                     &__description {
-                        @apply flex-grow max-w-[50%];
+                        @apply flex-grow md:max-w-[50%];
 
                         p {
                             @apply mb-[20px] last:mb-0;
@@ -165,7 +168,7 @@
     }
 
     &-fact-figure {
-        @apply bg-[url('/imgs/white-bg.png')] bg-[100%_auto] bg-[top_center] py-[80px] bg-no-repeat;
+        @apply bg-[url('/imgs/white-bg.png')] md:bg-[100%_auto] bg-[200%_auto] bg-[top_right] py-[80px] bg-no-repeat;
         
         .container {
             @apply flex flex-col gap-[50px];
@@ -176,14 +179,14 @@
         }
 
         &__items {
-            @apply grid grid-cols-4 gap-[20px];
+            @apply grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-[20px];
 
             &.odd-grid {
-                @apply flex flex-wrap justify-center gap-[40px];
+                @apply flex flex-wrap justify-center md:gap-[40px] gap-[20px];
             }
 
             &__item {
-                @apply flex flex-col gap-[26px] max-w-[300px] rounded-[35px] shadow-lg p-[40px] bg-white transition-all duration-300 opacity-50;
+                @apply flex flex-col gap-[26px] max-w-[300px] rounded-[35px] shadow-lg p-[40px] bg-white transition-all duration-300 sm:opacity-50 mx-auto;
                 
                 &__image {
                     @apply relative w-full aspect-square border border-wund-red rounded-[35px] bg-white transition-all duration-300;
@@ -213,7 +216,7 @@
         @apply py-[80px];
 
         .container {
-            @apply flex flex-col gap-[60px];
+            @apply flex flex-col md:gap-[60px] gap-[40px];
 
             h2 {
                 @apply text-wund-red font-bold;
@@ -221,13 +224,13 @@
         }
 
         &__list {
-            @apply flex flex-col gap-[40px] px-[60px];
+            @apply flex flex-col md:gap-[40px] gap-[20px] md:px-[60px];
 
             &__item {
-                @apply flex flex-row gap-[40px];
+                @apply flex sm:flex-row flex-col md:gap-[40px] gap-[20px];
 
                 &__image {
-                    @apply relative md:pw-min-w-[400px] big:min-w-[400px] min-w-[300px] overflow-hidden aspect-square border-2 border-wund-red rounded-[35px] bg-white;
+                    @apply relative md:pw-min-w-[400px] big:min-w-[400px] sm:min-w-[300px] min-w-[200px] overflow-hidden aspect-square border-2 border-wund-red rounded-[35px] bg-white;
     
                     img {
                         @apply w-full h-full object-cover;
@@ -250,7 +253,7 @@
     &-howto-apply {
         @apply py-[60px];
         .container {
-            @apply flex flex-col gap-[50px];
+            @apply flex flex-col md:gap-[50px] gap-[30px];
 
             h2 {
                 @apply text-wund-red font-bold;
@@ -258,17 +261,17 @@
         }
 
         &__list {
-            @apply grid grid-cols-2 gap-[120px];
+            @apply grid md:grid-cols-2 grid-cols-1 lg:gap-x-[120px] gap-x-[40px] md:gap-y-[80px] gap-y-[40px];
 
             &__item {
-                @apply pr-[65px] relative;
+                @apply pr-[65px] relative max-w-[400px] mx-auto;
 
                 &__number {
                     @apply absolute top-0 right-0 w-[140px] h-[50px] bg-wund-red text-white text-[20px] rounded-t-[15px] font-bold flex items-center justify-center rotate-90 translate-x-[28px] translate-y-[45px];
                 }
 
                 &__content {
-                    @apply flex flex-col gap-[20px];
+                    @apply flex flex-col md:gap-[20px] gap-[10px];
                     &__top-area {
                         @apply flex flex-col items-center gap-[40px] border-2 border-wund-red rounded-[35px] rounded-tr-none p-[40px];
 
@@ -293,7 +296,7 @@
     &-how-it-works-two {
         @apply py-[60px];
         .container {
-            @apply flex flex-col gap-[50px];
+            @apply flex flex-col md:gap-[50px] gap-[30px];
 
             h2 {
                 @apply text-wund-red font-bold;
@@ -301,10 +304,10 @@
         }
 
         &__list {
-            @apply grid grid-cols-2 gap-x-[200px] gap-y-[80px];
+            @apply grid md:grid-cols-2 grid-cols-1 lg:gap-x-[200px] gap-x-[40px] md:gap-y-[80px] gap-y-[40px];
 
             &__item {
-                @apply pr-[65px] relative;
+                @apply pr-[65px] relative max-w-[400px] mx-auto;
 
                 &__number {
                     @apply absolute top-0 right-0 w-[80px] h-[50px] bg-wund-red text-white text-[20px] rounded-t-[15px] font-bold flex items-center justify-center rotate-90 translate-x-[-2px] translate-y-[14px];
@@ -336,8 +339,16 @@
     &-comparison {
         
         .container {
-            @apply pt-[230px] pb-[80px];
+            @apply md:pt-[230px] pt-[130px] md:pb-[130px] pb-[60px] ;
             @apply relative;
+
+            .product-comparison__image {
+                @apply overflow-x-scroll;
+
+                img {
+                    @apply min-w-[800px] h-auto;
+                }
+            }
         }
     }
 }

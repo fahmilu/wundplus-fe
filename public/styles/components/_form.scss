@@ -1,0 +1,38 @@
+.contact-form {
+    @apply sm:py-[120px] py-[60px];
+}
+
+.form-contact {
+    @apply lg:max-w-full max-w-[600px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-[20px] border-2 border-wund-red sm:rounded-[35px] rounded-[20px] sm:p-[60px] px-[20px] py-[40px] gap-y-[40px];
+
+    form {
+        @apply flex flex-col gap-[20px];
+    }
+
+    .form-group {
+        @apply flex flex-col gap-[6px];
+
+        label {
+            @apply text-wund-black text-[14px] font-light;
+        }
+    }
+
+    .form-contact__content {
+        @apply flex flex-col gap-[20px] col-span-1;
+
+        &__info {
+            @apply flex flex-col;
+            span {
+                @apply text-wund-black sm:text-[14px] text-[12px] font-light;
+            }
+            a:not(.socmed),
+            p {
+                @apply text-[#212121] sm:text-[20px] text-[16px] leading-[1.5] font-medium;
+            }
+        }
+        h3 {
+            @apply text-wund-red sm:text-[40px] text-[32px] leading-[1.1] font-bold;
+        }
+    }
+    
+}

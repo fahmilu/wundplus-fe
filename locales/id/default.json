@@ -4,6 +4,27 @@
     },
     "cta": {
         "description": "Dapatkan produk <strong>[wund]</strong> sesuai kebutuhanmu sekarang!",
-        "btn_text": "Beli di sini:"
+        "btn_text": "Beli di sini:",
+        "description_product": "Akselerasi Perawatan Luka dengan <strong>[wund]</strong>",
+        "btn_text_product": "HUBUNGI KAMI",
+        "btn_url_product": "/id/hubungi-kami"
+    },
+    "contact": {
+        "form": {
+            "name": "Nama Anda",
+            "email": "Alamat Email",
+            "phone": "Nomor Telepon",
+            "message": "Pesan",
+            "message_product": "Masukan",
+            "subject": "Subjek",
+            "error": "Isian tidak boleh kosong",
+            "error_email": "Email tidak valid",
+            "submit": "Kirim Pesan",
+            "submit_product": "Kirim Masukan"
+        },
+        "success": {
+            "title": "Terima kasih!",
+            "description": "Kami akan segera menghubungi Anda."
+        }
     }
 }

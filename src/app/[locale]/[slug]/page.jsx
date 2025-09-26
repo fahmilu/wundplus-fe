@@ -18,10 +18,16 @@ export default async function Page({ params }) {
     
     return (
         <LayoutBase locale={locale}>
-            {(slug === 'articles' || slug === 'artikel') && (
+            {(slug === 'articles' || slug === 'artikel') ? (
                 <>
                     <ArticlesHeader data={data} featuredArticles={articlesData?.articles?.filter(article => article.is_featured) || []} />
                     <ArticlesList articles={articlesData?.articles || []} />
+                </>
+            ) : (
+                <>
+                    {data.components.map((component, index) => {
+                        return <Switcher key={index} type={component.type} data={component.data} />;
+                    })}
                 </>
             )}
             {/* {data.title && <Switcher type={'banner'} data={data} slug={slug} locale={locale} /> }

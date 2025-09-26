@@ -35,7 +35,7 @@ a {
 }
 
 .label-title {
-    @apply bg-wund-red text-white pw-pr-[120px] big:pr-[120px] pw-pl-[65px] big:pl-[65px] pw-py-[40px] big:py-[40px] pw-rounded-ee-[100px] big:rounded-ee-[100px] pw-text-[56px] big:text-[56px] leading-[1.2] font-light absolute top-0 left-0;
+    @apply bg-wund-red text-white md:pw-pr-[120px] pr-[65px] big:pr-[120px] md:pw-pl-[65px] pl-[30px] big:pl-[65px] md:pw-py-[40px] py-[20px] big:py-[40px] md:pw-rounded-ee-[100px] rounded-ee-[50px] big:rounded-ee-[100px] md:pw-text-[56px] text-[20px] big:text-[56px] leading-[1.2] font-light absolute top-0 left-0;
 
     strong {
         @apply font-bold;
@@ -71,6 +71,7 @@ a {
 @import "./partials/button";
 @import "./partials/footer";
 
+@import "./components/form";
 @import "./components/home";
 @import "./components/product";
 @import "./components/articles";

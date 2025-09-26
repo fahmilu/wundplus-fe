@@ -4,6 +4,27 @@
     },
     "cta": {
         "description": "Get <strong>[wund]</strong> products according to your needs now!",
+        "description_product": "Accelerate Wound Healing with <strong>[wund]</strong>",
+        "btn_text_product": "CONTACT US",
+        "btn_url_product": "/en/contact-us",
         "btn_text": "Buy here:"
+    },
+    "contact": {
+        "form": {
+            "name": "Your Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "message": "Message",
+            "subject": "Subject",
+            "message_product": "Feedback",
+            "error": "This field is required",
+            "error_email": "Email is not valid",
+            "submit": "Send Message",
+            "submit_product": "Submit Feedback"
+        },
+        "success": {
+            "title": "Thank you!",
+            "description": "We will contact you soon."
+        }
     }
 }

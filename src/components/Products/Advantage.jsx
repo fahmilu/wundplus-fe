@@ -15,14 +15,16 @@ const Advantage = ({ data }) => {
                     {data.clinical_data && (
                         <div className="product-advantage__content__clinical-data">
                             <h2 className="product-advantage__content__clinical-data__title" dangerouslySetInnerHTML={{ __html: replaceText(data.clinical_data.title) }} />
-                            {data.clinical_data.list.map((item, index) => (
-                                <div key={index} className="product-advantage__content__clinical-data__content">
-                                    <div className="product-advantage__content__clinical-data__content__image">
-                                        <Image src={item.image} alt={item.description} fill />
+                            <div className="product-advantage__content__clinical-data__contents">
+                                {data.clinical_data.list.map((item, index) => (
+                                    <div key={index} className="product-advantage__content__clinical-data__content">
+                                        <div className="product-advantage__content__clinical-data__content__image">
+                                            <Image src={item.image} alt={item.description} fill />
+                                        </div>
+                                        <div className="product-advantage__content__clinical-data__content__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
                                     </div>
-                                    <div className="product-advantage__content__clinical-data__content__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                             {data.clinical_data.note && (
                                 <div className="product-advantage__content__clinical-data__note" dangerouslySetInnerHTML={{ __html: replaceText(data.clinical_data.note) }} />
                             )}
