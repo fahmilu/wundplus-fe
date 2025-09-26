@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'wundplus.co.id',
+                hostname: 'api.wundplus.co.id',
             },
         ],
     },
