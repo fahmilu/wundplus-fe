@@ -37,8 +37,8 @@ export async function getProductDataByLocalizedSlug(slug, locale) {
 
 export async function getArticlesData(locale) {
     try {
-        const articlesData = await import(`@/data/articles.json`);
-        return articlesData.default;
+        const articlesData = await fetchData(`articles`, locale);
+        return articlesData.data;
     } catch (error) {
         notFound();
     }
@@ -46,8 +46,8 @@ export async function getArticlesData(locale) {
 
 export async function getArticleDetailData(slug, locale) {
     try {
-        const articleDetailData = await import(`@/data/article-detail.json`);
-        return articleDetailData.default;
+        const articleDetailData = await fetchData(`articles/${slug}`, locale);
+        return articleDetailData.data;
     } catch (error) {
         notFound();
     }

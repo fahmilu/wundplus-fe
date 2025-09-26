@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
 const ArticlesCard = ({ article }) => {
     const { i18n } = useTranslation();
     const currentLocale = i18n.language;
@@ -9,7 +10,7 @@ const ArticlesCard = ({ article }) => {
         <Link href={`/${currentLocale === 'id' ? 'id/artikel' : 'en/articles'}/${article.slug}`} className="articles__card">
             <div className="articles__card__top">
                 <div className="articles__card__top__tags">
-                    {article.tags.map((tag) => (
+                    {article.tags.slice(0, 2).map((tag) => (
                         <span key={tag.id} className="articles__card__top__tags__tag">{tag.name}</span>
                     ))}
                 </div>
@@ -22,11 +23,11 @@ const ArticlesCard = ({ article }) => {
                 </div>
             </div>
             <div className="articles__card__image">
-                <Image src={article.hero_image} alt={article.title} fill />
+                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + article.hero_image} alt={article.title} fill />
             </div>
             <div className="articles__card__title_area">
                 <h3>{article.title}</h3>
-                <h5>{article.lead}</h5>
+                <h5>{removeSpecificTags(article.lead, ['p'])}</h5>
             </div>
             <div className="articles__card__link">Read More</div>
         </Link>

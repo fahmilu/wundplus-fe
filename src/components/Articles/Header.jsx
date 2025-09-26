@@ -9,7 +9,7 @@ const ArticlesHeader = ({ data, featuredArticles }) => {
     return (
         <section className="articles-header">
             {data.image && (
-                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + data.image} alt={data.title} fill />
+                <Image src={data.image} alt={data.title} fill />
             )}
             <div className="container">
                 <div className="articles-header__content">

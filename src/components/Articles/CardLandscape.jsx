@@ -2,13 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
 const ArticlesCardLandscape = ({ article }) => {
     const { i18n } = useTranslation();
     const currentLocale = i18n.language;
     return (
         <Link href={`/${currentLocale === 'id' ? 'id/artikel' : 'en/articles'}/${article.slug}`} className="articles__card-landscape">
             <div className="articles__card-landscape__image">
-                <Image src={article.hero_image} alt={article.title} fill />
+                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + article.hero_image} alt={article.title} fill />
             </div>
             <div className="articles__card-landscape__content">
                 <div className="articles__card-landscape__top">
@@ -20,7 +21,7 @@ const ArticlesCardLandscape = ({ article }) => {
                 </div>
                 <div className="articles__card-landscape__title_area">
                     <h3>{article.title}</h3>
-                    <h5>{article.lead}</h5>
+                    <h5>{removeSpecificTags(article.lead, ['p'])}</h5>
                 </div>
                 <div className="articles__card-landscape__bottom">
                     <div className="articles__card-landscape__link">Read More</div>

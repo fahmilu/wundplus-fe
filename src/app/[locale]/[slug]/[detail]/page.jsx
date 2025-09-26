@@ -22,7 +22,7 @@ export default async function Page({ params }) {
 
     if((slug === 'articles' || slug === 'artikel') && detailSlug) {
         const articleDetailData = await getArticleDetailData(detailSlug, locale);
-        data = articleDetailData.data;
+        data = articleDetailData;
         articlesData = await getArticlesData(locale);
     }
 
