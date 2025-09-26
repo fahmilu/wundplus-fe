@@ -16,7 +16,7 @@ export default function Footer() {
                                     <span>@gws.wellness</span>
                                 </a>
                                 <a href="https://www.tiktok.com/@wundplus" target="_blank">
-                                    <img src="/imgs/TK.svg" className="icon" alt="tiktok" />
+                                    <img src="/imgs/tk.svg" className="icon" alt="tiktok" />
                                     <span>@wundplus</span>
                                 </a>
     
@@ -24,7 +24,7 @@ export default function Footer() {
                         </div>
                         <div className="footer__member">
                             <span>Member of</span>
-                            <img src="/imgs/sinarmas.png" alt="Sinarmas" />
+                            <img src="/imgs/Sinarmas.png" alt="Sinarmas" />
                             <img src="/imgs/GWS.png" alt="GWS" />
                         </div>
                     </div>
