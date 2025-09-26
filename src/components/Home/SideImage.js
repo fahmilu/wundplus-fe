@@ -9,7 +9,7 @@ const HomeSideImage = ({ data }) => {
                 {data.items.map((item, index) => (
                     <div key={index} className="home-side-image__item">
                         <div className="home-side-image__item__image-container"  data-aos="fade-right" data-aos-delay={100}>
-                            {item.title && <h3 className="home-side-image__item__image-container__title">{replaceText(item.title)}</h3>}
+                            {item.title && item.title !== '<p></p>' && <h3 className="home-side-image__item__image-container__title">{replaceText(removeSpecificTags(item.title, ['p']))}</h3>}
                             <div className="home-side-image__item__image">
                                 <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.title || `image`} fill />
                             </div>
