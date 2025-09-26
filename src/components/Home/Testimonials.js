@@ -60,13 +60,13 @@ const Testimonials = ({ data }) => {
                                 <div className="slick-slide__content__header">
                                     <div className="slick-slide__content__header__content">
                                         <div className="slick-slide__content__header__content__name">{item.name}</div>
-                                        <p className="slick-slide__content__header__content__role">{item.role}</p>
+                                        <p className="slick-slide__content__header__content__role">{item.position}</p>
                                     </div>
                                     <div className="slick-slide__content__header__avatar">
                                         <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.name} fill />
                                     </div>
                                 </div>
-                                <div className="slick-slide__content__description" dangerouslySetInnerHTML={{ __html: replaceText(`${item.description}`) }} />
+                                <div className="slick-slide__content__description" dangerouslySetInnerHTML={{ __html: replaceText(`${item.content}`) }} />
                             </div>
                         ))} 
                     </Slider>
