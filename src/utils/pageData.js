@@ -28,8 +28,8 @@ export async function getPageDataByLocalizedSlug(slug, locale) {
 
 export async function getProductDataByLocalizedSlug(slug, locale) {
     try {
-        const productData = await import(`@/data/products/${slug}-${locale}.json`);
-        return productData.default;
+        const productData = await fetchData(`products/${slug}`, locale);
+        return productData.data;
     } catch (error) {
         notFound();
     }

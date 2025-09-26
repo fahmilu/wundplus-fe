@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { replaceText } from "@/utils/wund";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
 const HowtoApply = ({ data }) => {
     return (
         <section className="product-howto-apply">
             <div className="container">
-                <h2>{data.title}</h2>
+                <h2>{removeSpecificTags(data.title, ['p'])}</h2>
                 <div className="product-howto-apply__list">
-                    {data.list.map((item, index) => (
+                    {data.items.map((item, index) => (
                         <div key={index} className="product-howto-apply__list__item">
                             <div className="product-howto-apply__list__item__number">
                                 STEP {index + 1 > 9 ? index + 1 : `0${index + 1}`}

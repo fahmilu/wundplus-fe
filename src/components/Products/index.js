@@ -12,17 +12,17 @@ const ProductsSwitcher = ({ type, dataParent, data }) => {
         case 'banner':
             return <ProductsBanner dataParent={dataParent} data={data} />;
         case 'about':
-            return <About data={data} />;
+            return data.active ? <About dataParent={dataParent} data={data} /> : null;
         case 'advantage':
-            return <Advantage data={data} />;
+            return data.active ? <Advantage data={data} /> : null;
         case 'fact-figure':
-            return <FactFigure data={data} />;
+            return data.active ? <FactFigure data={data} /> : null;
         case 'how-it-works':
-            return data.theme === 'two' ? <HowItWorksTwo data={data} /> : <HowItWorks data={data} />;
+            return data.active ? (data.theme === 'two' ? <HowItWorksTwo data={data} /> : <HowItWorks data={data} />) : null;
         case 'how-to-apply':
-            return <HowtoApply data={data} />;
+            return data.active ? <HowtoApply data={data} /> : null;
         case 'comparison':
-            return <Comparison data={data} />;
+            return data.active ? <Comparison data={data} /> : null;
         default:
             return null;
     }

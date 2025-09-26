@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
 const Comparison = ({ data }) => {
     return (
         <section className="product-comparison relative">
-            <div className="label-title">{data.title}</div>
+            <div className="label-title">{removeSpecificTags(data.title, ['p'])}</div>
             <div className="container">
                 {data.image && (
                     <div className="product-comparison__image">

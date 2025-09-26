@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { replaceText } from "@/utils/wund";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
 const FactFigure = ({ data }) => {
     return (
         <section className="product-fact-figure">
             <div className="container">
-                <h2>{data.title}</h2>
+                <h2>{removeSpecificTags(data.title, ['p'])}</h2>
                 <div className={`product-fact-figure__items ${data.items.length > 4 && 'odd-grid'}`}>
                     {data.items.map((item, index) => (
                         <div key={index} className="product-fact-figure__items__item group">

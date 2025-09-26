@@ -18,7 +18,7 @@ const Advantage = ({ data }) => {
                         <div className="product-advantage__content__clinical-data">
                             <h2 className="product-advantage__content__clinical-data__title" dangerouslySetInnerHTML={{ __html: replaceText(data.clinical_data.title) }} />
                             <div className="product-advantage__content__clinical-data__contents">
-                                {data.clinical_data.list.map((item, index) => (
+                                {data.clinical_data.items.map((item, index) => (
                                     <div key={index} className="product-advantage__content__clinical-data__content">
                                         <div className="product-advantage__content__clinical-data__content__image">
                                             <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.description} fill />
