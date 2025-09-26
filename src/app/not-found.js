@@ -3,7 +3,7 @@ import Link from "next/link";
 const NotFound = async ({ params }) => {
     const param = await params;
     const locale = param?.locale || "id";
-    console.log(params);
+    // console.log(params);
     // const locale = "en";
     return (
         <LayoutBase locale={locale} isNoFooter={true}>

@@ -10,13 +10,12 @@ import HomeTestimonials from '../Home/Testimonials';
 import HomeTrustedBy from '../Home/TrustedBy';
 import ContactForm from '../Form/Contact';
 const Switcher = ({ type, data }) => {
-    console.log(type);
     switch (type) {
         case 'home-banner':
             return <HomeBanner data={data} />;
         case 'home-about':
             return <HomeAbout data={data} />;
-        case 'home-product':
+        case 'home-products':
             return <HomeProducts data={data} />;
         case 'home-usage':
             return <HomeSuitableFor data={data} />;

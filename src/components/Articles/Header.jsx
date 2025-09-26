@@ -8,7 +8,9 @@ const ArticlesHeader = ({ data, featuredArticles }) => {
     const currentLocale = i18n.language;
     return (
         <section className="articles-header">
-            <Image src={data.image} alt={data.title} fill />
+            {data.image && (
+                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + data.image} alt={data.title} fill />
+            )}
             <div className="container">
                 <div className="articles-header__content">
                     <h1 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />

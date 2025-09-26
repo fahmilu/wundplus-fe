@@ -9,8 +9,8 @@ const FactFigure = ({ data }) => {
                     {data.items.map((item, index) => (
                         <div key={index} className="product-fact-figure__items__item group">
                             <div className="product-fact-figure__items__item__image">
-                                <Image src={item.image} className="!opacity-100 group-hover:!opacity-0" alt={item.description} fill />
-                                <Image src={item.image_hover} className="!opacity-0 group-hover:!opacity-100" alt={item.description} fill />
+                                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} className="!opacity-100 group-hover:!opacity-0" alt={item.description} fill />
+                                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image_hover} className="!opacity-0 group-hover:!opacity-100" alt={item.description} fill />
                             </div>
                             <div className="product-fact-figure__items__item__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
                         </div>

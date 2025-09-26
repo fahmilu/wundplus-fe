@@ -5,7 +5,10 @@ import Slider from "react-slick";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TextAnimation } from "@/utils/textAnimation";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
+
 const Products = ({ data }) => {
+    console.log(data);
     const sliderRef = useRef(null);
     const [currentSlide, setCurrentSlide] = useState(0);
     const { i18n } = useTranslation();
@@ -37,15 +40,15 @@ const Products = ({ data }) => {
         <div className="home-products" id={currentLocale === "en" ? "products" : "produk"}>
             <div className="container">
                 <TextAnimation delay={0.1}>
-                    <h2 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
+                    <h2 dangerouslySetInnerHTML={{ __html: replaceText(removeSpecificTags(data.title, ['p'])) }} />
                 </TextAnimation>
                 <div className="home-products__items slider-container" data-aos="fade-up" data-aos-delay={100}>
                     <Slider ref={sliderRef} {...settings}>
                         {data.items.map((item, index) => (
                             <div key={index} className="home-products__item">
-                                <Image src={item.image} alt={item.label} fill className="!w-full !h-auto !object-contain !relative" />
+                                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.label} fill className="!w-full !h-auto !object-contain !relative" />
                                 <div className="btn-area">
-                                    <Link href={`/${currentLocale}/${currentLocale === "en" ? "products" : "produk"}/${item.slug}`} className="btn btn-primary">{item.label}</Link>
+                                    <Link href={`/${currentLocale}/${currentLocale === "en" ? "products" : "produk"}/${item.slug}`} className="btn btn-primary">{item.title}</Link>
                                 </div>
                             </div>
                         ))}

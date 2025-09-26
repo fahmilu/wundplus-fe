@@ -14,7 +14,7 @@ const HowItWorksTwo = ({ data }) => {
                             <div className="product-how-it-works-two__list__item__content">
                                 <div className="product-how-it-works-two__list__item__content__top-area">
                                     <div className="product-how-it-works-two__list__item__content__top-area__image">
-                                        <Image src={item.image} alt={item.description} fill />
+                                        <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.description} fill />
                                     </div>
                                 </div>
                                 <div className="product-how-it-works-two__list__item__content__description">

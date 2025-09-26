@@ -4,13 +4,12 @@ import { replaceText } from "@/utils/wund";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 const Banner = ({ data }) => {
-    console.log(data);
     const { i18n } = useTranslation();
     const currentLocale = i18n.language;
     return (
         <div className="content content__banner">
             {data.hero_image && (
-                <Image src={data.hero_image} alt={data.title} fill />
+                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + data.hero_image} alt={data.title} fill />
             )}
             <div className="container">
                 <Link href={`/${currentLocale === 'id' ? 'id/artikel' : 'en/articles'}`} className="content__banner__back">

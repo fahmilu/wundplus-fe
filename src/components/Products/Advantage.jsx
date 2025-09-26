@@ -3,9 +3,11 @@ import { replaceText } from "@/utils/wund";
 const Advantage = ({ data }) => {
     return (
         <section className="product-advantage">
-            <div className="product-advantage__image">
-                <Image src={data.image} alt={data.title} fill className="object-cover" />
-            </div>
+            {data.image && (
+                <div className="product-advantage__image">
+                    <Image src={process.env.NEXT_PUBLIC_ASSET_URL + data.image} alt={data.title} fill className="object-cover" />
+                </div>
+            )}
             <div className="relative">
                 <div className="label-title" dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
                 <div className="container">
@@ -19,7 +21,7 @@ const Advantage = ({ data }) => {
                                 {data.clinical_data.list.map((item, index) => (
                                     <div key={index} className="product-advantage__content__clinical-data__content">
                                         <div className="product-advantage__content__clinical-data__content__image">
-                                            <Image src={item.image} alt={item.description} fill />
+                                            <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.description} fill />
                                         </div>
                                         <div className="product-advantage__content__clinical-data__content__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
                                     </div>

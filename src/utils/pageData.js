@@ -1,9 +1,17 @@
 import { notFound } from 'next/navigation';
+import { fetchData } from '@/services/api';
 
 export async function getPageData(slug, locale) {
     try {
-        const pageData = await import(`@/data/pages/${slug}-${locale}.json`);
-        return pageData.default;
+        
+        if(slug === 'homepage') {
+            const pageData = await fetchData(`homepage`, locale);
+            return pageData.data;
+        } else {            
+            const pageData = await import(`@/data/pages/${slug}-${locale}.json`);
+            return pageData.default;
+        }
+
     } catch (error) {
         notFound();
     }

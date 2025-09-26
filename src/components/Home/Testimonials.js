@@ -1,10 +1,12 @@
 "use client"
-import Image from "next/image";
+import ImageWithFallback from "../ImagewFallback";
 import { replaceText } from "@/utils/wund";
 import Slider from "react-slick";
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TextAnimation } from "@/utils/textAnimation";
+import { removeSpecificTags } from "@/utils/CleanupHtml";
+
 const Testimonials = ({ data }) => {
 
     const sliderRef = useRef(null);
@@ -49,11 +51,11 @@ const Testimonials = ({ data }) => {
         <section className="home-testimonials">
             <div className="container">
                 <TextAnimation delay={0.3}>
-                    <h2 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
+                    <h2 dangerouslySetInnerHTML={{ __html: replaceText(removeSpecificTags(data.title, ['p'])) }} />
                 </TextAnimation>
                 <div className="home-testimonials__items slider-container" data-aos="fade-up" data-aos-delay={100}>
                     <Slider ref={sliderRef} {...settings}>
-                        {data.list.map((item, index) => (
+                        {data.items.map((item, index) => (
                             <div key={index} className="slick-slide__content">
                                 <div className="slick-slide__content__header">
                                     <div className="slick-slide__content__header__content">
@@ -61,7 +63,7 @@ const Testimonials = ({ data }) => {
                                         <p className="slick-slide__content__header__content__role">{item.role}</p>
                                     </div>
                                     <div className="slick-slide__content__header__avatar">
-                                        <Image src={item.image} alt={item.name} fill />
+                                        <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.name} fill />
                                     </div>
                                 </div>
                                 <div className="slick-slide__content__description" dangerouslySetInnerHTML={{ __html: replaceText(`${item.description}`) }} />
@@ -70,7 +72,7 @@ const Testimonials = ({ data }) => {
                     </Slider>
                     <div className="controls">
                         <div className="dots">
-                            {data.list.map((_, index) => (
+                            {data.items.map((_, index) => (
                                 <button
                                     key={index}
                                     className={`dot ${currentSlide === index ? 'active' : ''}`}

@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 import ContactForm from '../Form/Contact';
 import CTAs from '../CTAs';
 const DetailPageArticles = ({ data, articlesData }) => {
-    console.log(data);
     const { i18n } = useTranslation();
     const currentLocale = i18n.language;
     return (

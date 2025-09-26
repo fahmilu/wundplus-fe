@@ -5,7 +5,7 @@ const ProductsBanner = ({ dataParent, data }) => {
         <>
             <section className="product-banner">
                 <div className="product-banner__image">
-                    <Image src={data.banner} alt={data.title} fill />
+                    <Image src={process.env.NEXT_PUBLIC_ASSET_URL + data.banner} alt={data.title} fill />
                 </div>
                 <div className="container">
                     <div className="product-banner__content">
@@ -17,9 +17,11 @@ const ProductsBanner = ({ dataParent, data }) => {
             <section className="product-product-header">
                 <div className="container">
                     <div className="product-product-header__content">
-                        <div className="product-product-header__image">
-                            <Image src={dataParent.image} alt={data.title} fill />
-                        </div>
+                        {dataParent.image && (
+                            <div className="product-product-header__image">
+                                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + dataParent.image} alt={data.title} fill />
+                            </div>
+                        )}
                         <h2 dangerouslySetInnerHTML={{ __html: replaceText(dataParent.title) }} />
                     </div>
                     <img src={'/imgs/details/rec-by.png'} className="sm:w-[228px] w-full h-auto block" alt={'recommended product'} />

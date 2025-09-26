@@ -9,7 +9,7 @@ const HowItWorks = ({ data }) => {
                     {data.list.map((item, index) => (
                         <div key={index} className="product-how-it-works__list__item">
                             <div className="product-how-it-works__list__item__image">
-                                <Image src={item.image} alt={item.description} fill />
+                                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.description} fill />
                             </div>
                             <div className="product-how-it-works__list__item__description">
                                 <h4>{item.title}</h4>
