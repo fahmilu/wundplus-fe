@@ -2,19 +2,41 @@
 
 import { useRouter, usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
+import { getEquivalentSlugForLanguage } from "@/utils/navigation";
 
 export default function LanguageSwitcher() {
   const router = useRouter();
   const pathname = usePathname();
   const { i18n } = useTranslation();
 
+
   const changeLanguage = (locale) => {
-    // Remove current locale from pathname
-    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, "") || "/";
-    // Navigate to new locale
-    // router.push(``);
-    window.location.href = `/${locale}${pathWithoutLocale}`;
+    // Extract current locale and slug from pathname
+    const pathSegments = pathname.split('/').filter(Boolean);
+    const currentLocale = pathSegments[0] || 'en';
+    const currentSlug = pathSegments[1];
+    
+    // Handle different page types
+    if (!currentSlug) {
+      // Home page - just change locale
+      window.location.href = `/${locale}`;
+    } else if (pathSegments.length === 2) {
+      // Regular page with slug (e.g., /en/articles, /id/artikel)
+      const equivalentSlug = getEquivalentSlugForLanguage(currentSlug, currentLocale, locale);
+      window.location.href = `/${locale}/${equivalentSlug}`;
+    } else if (pathSegments.length === 3) {
+      // Detail page (e.g., /en/articles/some-article, /id/artikel/some-article)
+      const equivalentSlug = getEquivalentSlugForLanguage(currentSlug, currentLocale, locale);
+      const detailSlug = pathSegments[2];
+      window.location.href = `/${locale}/${equivalentSlug}/${detailSlug}`;
+    } else {
+      // Fallback - just change locale
+      const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}/, "") || "/";
+      window.location.href = `/${locale}${pathWithoutLocale}`;
+    }
   };
+
+  
 
   return (
     <>

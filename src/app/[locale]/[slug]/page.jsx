@@ -4,6 +4,16 @@ import Switcher from "@/components/Switcher";
 import ArticlesHeader from "@/components/Articles/Header";
 import ArticlesList from "@/components/Articles/List";
 import CTAs from "@/components/CTAs";
+
+export async function generateMetadata({ params }) {
+  const { locale, slug } = await params;
+  const data = await getPageDataByLocalizedSlug(slug, locale);
+  return {
+    title: `${data.title} | wund+™`,
+    description: `${ data.description} | wund+™`,
+  };
+}
+
 export default async function Page({ params }) {
     const { locale, slug } = await params;
     

@@ -144,7 +144,7 @@
                     @apply flex md:flex-row flex-col items-center justify-between md:gap-[100px] gap-[40px];
 
                     &__image {
-                        @apply relative h-auto md:w-[30%] max-w-[80%];
+                        @apply relative h-auto md:w-[30%] aspect-video max-w-[80%];
 
                         img {
                             @apply w-full h-full object-contain relative #{!important};
@@ -155,6 +155,14 @@
                         @apply flex-grow md:max-w-[50%];
 
                         p {
+                            strong {
+                                @apply font-bold;
+                            }
+
+                            em {
+                                @apply text-base block leading-[1] -mb-[10px];
+                            }
+
                             @apply mb-[20px] last:mb-0;
                         }
                     }
@@ -186,7 +194,7 @@
             }
 
             &__item {
-                @apply flex flex-col gap-[26px] max-w-[300px] rounded-[35px] shadow-lg p-[40px] bg-white transition-all duration-300 sm:opacity-50 mx-auto;
+                @apply flex flex-col gap-[26px] min-w-[300px] max-w-[300px] rounded-[35px] shadow-lg p-[40px] bg-white transition-all duration-300 sm:opacity-50    ;
                 
                 &__image {
                     @apply relative w-full aspect-square border border-wund-red rounded-[35px] bg-white transition-all duration-300;
@@ -264,7 +272,7 @@
             @apply grid md:grid-cols-2 grid-cols-1 lg:gap-x-[120px] gap-x-[40px] md:gap-y-[80px] gap-y-[40px];
 
             &__item {
-                @apply pr-[65px] relative max-w-[400px] mx-auto;
+                @apply pr-[65px] relative max-w-[400px] mx-auto w-full;
 
                 &__number {
                     @apply absolute top-0 right-0 w-[140px] h-[50px] bg-wund-red text-white text-[20px] rounded-t-[15px] font-bold flex items-center justify-center rotate-90 translate-x-[28px] translate-y-[45px];
@@ -307,7 +315,7 @@
             @apply grid md:grid-cols-2 grid-cols-1 lg:gap-x-[200px] gap-x-[40px] md:gap-y-[80px] gap-y-[40px];
 
             &__item {
-                @apply pr-[65px] relative max-w-[400px] mx-auto;
+                @apply pr-[65px] relative max-w-[400px] mx-auto w-full;
 
                 &__number {
                     @apply absolute top-0 right-0 w-[80px] h-[50px] bg-wund-red text-white text-[20px] rounded-t-[15px] font-bold flex items-center justify-center rotate-90 translate-x-[-2px] translate-y-[14px];

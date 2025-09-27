@@ -4,7 +4,7 @@ const Reference = ({ data }) => {
     if (!data.reference) return null;
 
     const references = data.reference.split(',');
-    
+
     return data.reference && (
         <div className="content content__reference">
             <div className="content__reference-title">Reference</div>
