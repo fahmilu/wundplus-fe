@@ -221,7 +221,7 @@
     }
 
     &__controls {
-        @apply flex flex-row gap-[20px] items-center justify-between py-[40px];
+        @apply flex sm:flex-row flex-col gap-[20px] items-center justify-between py-[40px];
 
         a {
             @apply flex flex-row hover:bg-wund-red transition-all duration-300 gap-3 items-center shadow-[0_7.98px_11.4px_rgba(0,0,0,0.20)] rounded-[20px] h-[60px] px-[20px];
