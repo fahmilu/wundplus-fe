@@ -259,6 +259,14 @@
 }
 .content {
     
+    &__reference {
+        @apply w-full;
+        @apply font-myriad italic text-sm;
+
+        a {
+            @apply underline;
+        }
+    }
     h3 {
         @apply md:text-[32px] text-[24px] leading-[1.2] font-bold text-wund-red mb-[20px] last:mb-0;
     }
