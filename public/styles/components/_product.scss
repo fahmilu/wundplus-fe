@@ -1,6 +1,6 @@
 .product {
     &-banner {
-        @apply bg-wund-black w-full relative md:aspect-[1440/798] md:h-auto h-[auto];
+        @apply bg-wund-black w-full relative md:min-h-[550px] md:h-[calc(100vh - 310px)] h-[auto];
 
         &__image {
             @apply w-full h-full absolute top-0 left-0;
