@@ -1,14 +1,13 @@
 'use client';
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-// import { pushData } from "@/services/api";
+import { pushData } from "@/services/api";
 import { useTranslation } from "react-i18next";
 const ContactForm = ({ title = 'General Feedback', articleId = null }) => {
     const { t, i18n } = useTranslation();
     const currentLocale = i18n.language;
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitSuccess, setSubmitSuccess] = useState(false);
-    const subject = articleId ? `Feedback for Article - ${articleId}` : '';
 
     const {
         register,
@@ -24,8 +23,8 @@ const ContactForm = ({ title = 'General Feedback', articleId = null }) => {
         try {
             console.log(data);
             // Simulate API call - replace with actual API endpoint
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            // const response = await pushData("contact", data);
+            // await new Promise(resolve => setTimeout(resolve, 1000));
+            const response = await pushData("feedback", data);
             // console.log("Response:", response);
             
             // console.log("Form data:", data);
@@ -143,32 +142,15 @@ const ContactForm = ({ title = 'General Feedback', articleId = null }) => {
                                 </div>
                             </div>
                         </div>
-                        {articleId ? (
+                        {articleId && (
                             <>
-                                {/* Hidden Subject Field */}
-                                <input
-                                    type="hidden"
-                                    {...register("subject")}
-                                    value={subject}
-                                />
                                 {/* Hidden Article ID Field */}
                                 <input
                                     type="hidden"
-                                    {...register("articleId")}
+                                    {...register("article_id")}
                                     value={articleId}
                                 />
                             </>
-                        ) : (
-                            <div className="form-group">
-                                <label htmlFor="company">{t("contact.form.subject")}</label>
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    {...register("subject")}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                                    placeholder={currentLocale === 'id' ? 'Masukkan subjek' : 'Enter your subject'}
-                                />
-                            </div>
                         )}
                         <div className="form-group">
                             <label htmlFor="message">{articleId ? t("contact.form.message_product") : t("contact.form.message")}</label>

@@ -16,7 +16,6 @@
             "phone": "Nomor Telepon",
             "message": "Pesan",
             "message_product": "Masukan",
-            "subject": "Subjek",
             "error": "Isian tidak boleh kosong",
             "error_email": "Email tidak valid",
             "submit": "Kirim Pesan",
