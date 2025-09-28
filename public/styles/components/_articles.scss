@@ -221,7 +221,7 @@
     }
 
     &__controls {
-        @apply flex flex-row gap-[20px] items-center justify-between py-[40px];
+        @apply flex sm:flex-row flex-col gap-[20px] items-center justify-between py-[40px];
 
         a {
             @apply flex flex-row hover:bg-wund-red transition-all duration-300 gap-3 items-center shadow-[0_7.98px_11.4px_rgba(0,0,0,0.20)] rounded-[20px] h-[60px] px-[20px];
@@ -259,6 +259,14 @@
 }
 .content {
     
+    &__reference {
+        @apply w-full;
+        @apply font-myriad italic text-sm;
+
+        a {
+            @apply underline;
+        }
+    }
     h3 {
         @apply md:text-[32px] text-[24px] leading-[1.2] font-bold text-wund-red mb-[20px] last:mb-0;
     }

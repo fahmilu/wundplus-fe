@@ -25,3 +25,16 @@ export function getPageKeyFromSlug(slug, locale) {
     }
     return null;
 }
+
+// Function to get the equivalent slug for a different language
+export function getEquivalentSlugForLanguage(currentSlug, currentLocale, targetLocale) {
+    // First, get the page key from the current slug
+    const pageKey = getPageKeyFromSlug(currentSlug, currentLocale);
+    
+    if (pageKey && navigations[pageKey] && navigations[pageKey][targetLocale]) {
+        return navigations[pageKey][targetLocale].slug;
+    }
+    
+    // If no mapping found, return the original slug
+    return currentSlug;
+}

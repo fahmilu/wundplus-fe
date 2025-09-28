@@ -22,7 +22,7 @@ const ProductsBanner = ({ dataParent, data }) => {
                                 <Image src={process.env.NEXT_PUBLIC_ASSET_URL + dataParent.image} alt={`${dataParent.name} Thumbnail`} fill />
                             </div>
                         )}
-                        <h2 dangerouslySetInnerHTML={{ __html: replaceText(dataParent.name) }} />
+                        <h2 dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
                     </div>
                     <img src={'/imgs/details/rec-by.png'} className="sm:w-[228px] w-full h-auto block" alt={'recommended product'} />
                 </div>

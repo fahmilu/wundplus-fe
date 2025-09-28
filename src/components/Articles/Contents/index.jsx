@@ -13,6 +13,8 @@ const ContentsSwitcher = ({ type, dataParent, data }) => {
             return <Quote data={data} />;
         case 'single-image':
             return <SingleImage dataParent={dataParent} data={data} />;
+        case 'reference':
+            return <Reference data={data} />;
         default:
             return null;
     }
