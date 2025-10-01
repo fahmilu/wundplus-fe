@@ -3,9 +3,7 @@ import Paragraph from './Paragraph';
 import ParagraphWithImage from './ParagraphWithImage';
 import Quote from './Quote';
 import SingleImage from './SingleImage';
-import Reference from './Reference';
-
-const ContentsSwitcher = ({ type, data }) => {
+const ContentsSwitcher = ({ type, dataParent, data }) => {
     switch (type) {
         case 'paragraph':
             return <Paragraph data={data} />;
@@ -14,7 +12,7 @@ const ContentsSwitcher = ({ type, data }) => {
         case 'quote':
             return <Quote data={data} />;
         case 'single-image':
-            return <SingleImage data={data} />;
+            return <SingleImage dataParent={dataParent} data={data} />;
         case 'reference':
             return <Reference data={data} />;
         default:

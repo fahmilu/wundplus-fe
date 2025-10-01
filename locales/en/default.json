@@ -15,7 +15,6 @@
             "email": "Email Address",
             "phone": "Phone Number",
             "message": "Message",
-            "subject": "Subject",
             "message_product": "Feedback",
             "error": "This field is required",
             "error_email": "Email is not valid",

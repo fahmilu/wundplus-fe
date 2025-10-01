@@ -15,7 +15,7 @@ const DetailPageArticles = ({ data, articlesData }) => {
             <Banner data={data} />
             <div className="content__lists container relative">
                 {data.content && data.content.map((content, index) => {
-                    return <ContentsSwitcher key={index} type={content.type} data={content} />;
+                    return <ContentsSwitcher key={index} type={content.type} dataParent={data} data={content} />;
                 })}
             </div>
             <div className="article__bottom">
