@@ -13,7 +13,7 @@ export default function Header({ locale }) {
         <header className="header">
             <div className="container">
                 <Link href="/" className="header__logo" data-aos="fade-down">
-                    <Image src="/imgs/logo.svg" alt="Logo" fill />
+                    <Image src="/imgs/logo.png" alt="Logo" fill />
                 </Link>
                 <Desktop navItems={navItems} />
                 <Mobile navItems={navItems} />

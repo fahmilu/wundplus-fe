@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { replaceText } from "@/utils/wund";
-const Advantage = ({ data }) => {
+const Advantage = ({ data, dataParent }) => {
+    console.log(data);
     return (
         <section className="product-advantage">
             {data.image && (
@@ -9,21 +10,26 @@ const Advantage = ({ data }) => {
                 </div>
             )}
             <div className="relative">
-                <div className="label-title" dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
                 <div className="container">
+                    <div className="label-title" dangerouslySetInnerHTML={{ __html: replaceText(data.title) }} />
                     <div className="product-advantage__content">
                         <div className="product-advantage__content__description" dangerouslySetInnerHTML={{ __html: replaceText(data.description) }} />
                     </div>
                     {data.clinical_data && (
                         <div className="product-advantage__content__clinical-data">
                             <h2 className="product-advantage__content__clinical-data__title" dangerouslySetInnerHTML={{ __html: replaceText(data.clinical_data.title) }} />
-                            <div className="product-advantage__content__clinical-data__contents">
+                            <div className="product-advantage__content__clinical-data__contents" data-parent={dataParent.slug}>
                                 {data.clinical_data.items.map((item, index) => (
                                     <div key={index} className="product-advantage__content__clinical-data__content">
                                         <div className="product-advantage__content__clinical-data__content__image">
                                             <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.description} fill />
                                         </div>
-                                        <div className="product-advantage__content__clinical-data__content__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
+                                        <div className="product-advantage__content__clinical-data__content__text">
+                                            {dataParent.slug === 'regeneration-cream' && (
+                                                <div className="product-advantage__content__clinical-data__content__title" dangerouslySetInnerHTML={{ __html: replaceText(item.title) }} />
+                                            )}
+                                            <div className="product-advantage__content__clinical-data__content__description" dangerouslySetInnerHTML={{ __html: replaceText(item.description) }} />
+                                        </div>
                                     </div>
                                 ))}
                             </div>

@@ -4,8 +4,10 @@ import { removeSpecificTags } from "@/utils/CleanupHtml";
 const HomeSideImage = ({ data }) => {
     return (
         <div className="home-side-image relative overflow-hidden">
-            <div className="label-title" data-aos="fade-up" data-aos-delay={100} dangerouslySetInnerHTML={{ __html: replaceText(removeSpecificTags(data.title, ['p'])) }} />
             <div className="container">
+                <div>
+                    <div className="label-title" data-aos="fade-up" data-aos-delay={100} dangerouslySetInnerHTML={{ __html: replaceText(removeSpecificTags(data.title, ['p'])) }} />
+                </div>
                 {data.items.map((item, index) => (
                     <div key={index} className="home-side-image__item">
                         <div className="home-side-image__item__image-container"  data-aos="fade-right" data-aos-delay={100}>

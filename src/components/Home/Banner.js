@@ -8,7 +8,7 @@ const HomeBanner = ({ data }) => {
         <div className="home-banner"  data-aos="fade-in">
             <div className="home-banner__image" >
                 <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + data.image} alt={data.title} fill className="hidden md:block" />
-                <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + data.image_mobile || data.image} alt={data.title} fill className="block md:hidden" />
+                <ImageWithFallback src={data.image_mobile ? process.env.NEXT_PUBLIC_ASSET_URL + data.image_mobile : '/imgs/home-mobile-new.jpg'} alt={data.title} fill className="block md:hidden" />
             </div>
             <div className="container"> 
                 <div className="home-banner__content">

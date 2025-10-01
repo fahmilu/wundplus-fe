@@ -1,6 +1,6 @@
 .product {
     &-banner {
-        @apply bg-wund-black w-full relative md:min-h-[550px] md:h-[calc(100vh_-_310px)] h-[auto];
+        @apply bg-wund-black w-full relative md:min-h-[500px] xl:pw-min-h-[700px] 2xl:pw-min-h-[600px] md:h-[calc(100vh_-_310px)] h-[auto];
 
         &__image {
             @apply w-full h-full absolute top-0 left-0;
@@ -39,7 +39,7 @@
         }
 
         &__image {
-            @apply md:pw-min-w-[492px] sm:max-w-[unset] sm:h-auto h-[60px] max-w-[180px] min-w-[180px] big:min-w-[492px] relative;
+            @apply md:pw-min-w-[400px] sm:max-w-[unset] sm:h-auto h-[60px] max-w-[180px] min-w-[180px] big:min-w-[492px] relative;
 
             img {
                 @apply w-full h-auto object-contain absolute top-[unset] md:bottom-[-60px] bottom-[-30px] left-0 #{!important};
@@ -62,7 +62,7 @@
         }
 
         &__image {
-            @apply relative max-md:max-w-[180px] max-md:mx-auto md:pw-min-w-[449px] big:min-w-[449px] min-w-[300px] h-auto;
+            @apply relative max-md:max-w-[180px] max-md:mx-auto md:pw-min-w-[449px] min-w-[300px] h-auto;
 
             img {
                 @apply w-full h-auto relative #{!important};
@@ -78,6 +78,10 @@
                 }
             }
 
+            p {
+                @apply md:pw-text-[20px] md:pw-leading-[30px] text-[16px] leading-[1.5];
+            }
+
             &__list {
                 @apply flex flex-col gap-[20px];
 
@@ -87,7 +91,7 @@
                 @apply flex flex-row items-center;
 
                 &__icon {
-                    @apply relative sm:min-w-[90px] min-w-[60px] aspect-square border border-wund-red bg-white rounded-full z-10;
+                    @apply relative sm:pw-min-w-[90px] min-w-[60px] aspect-square border border-wund-red bg-white rounded-full z-10;
 
                     img {
                         @apply w-[60%] h-[60%] object-contain absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 #{!important};
@@ -111,7 +115,7 @@
 
     &-advantage {
         .container {
-            @apply relative md:pw-pt-[265px] big:pt-[265px] pt-[140px] md:pb-[180px] pb-[60px] items-start;
+            @apply relative md:pb-[180px] pb-[60px] items-start;
         }
 
         &__image {
@@ -119,6 +123,7 @@
         }
 
         &__content {
+            @apply md:pw-pt-[95px] big:pt-[95px] pt-[140px];
             &__description {
 
                 ul {
@@ -126,7 +131,7 @@
                     column-gap: 120px;
 
                     li {
-                        @apply leading-[2] pl-[10px];
+                        @apply pl-[10px] md:pw-text-[20px] md:pw-leading-[35px] text-[16px] leading-[1.5];
                     }
                 }
             }
@@ -142,19 +147,29 @@
                 }
                 &__content {
                     @apply flex md:flex-row flex-col items-center justify-between md:gap-[100px] gap-[40px];
+                    &__title {
+                        @apply text-wund-red font-bold md:pw-text-[50px] md:pw-leading-[65px] text-[30px] leading-[1.5];
 
+                        .color {
+                            @apply md:pw-text-[80px] md:pw-leading-[80px] text-[60px] leading-[1.5];
+                        }
+                    }
                     &__image {
-                        @apply relative h-auto md:w-[30%] aspect-video max-w-[80%];
+                        @apply relative h-auto md:w-[30%] max-w-[80%];
 
                         img {
                             @apply w-full h-full object-contain relative #{!important};
                         }
                     }
 
+                    &__text {
+                        @apply flex-grow md:max-w-[70%];
+                    }
+
                     &__description {
-                        @apply flex-grow md:max-w-[50%];
 
                         p {
+                            @apply md:pw-text-[20px] md:pw-leading-[35px] text-[16px] leading-[1.5];
                             strong {
                                 @apply font-bold;
                             }
@@ -168,6 +183,24 @@
                     }
                 }
 
+                .product-advantage__content__clinical-data__contents[data-parent="regeneration-cream"] {
+                    .product-advantage__content__clinical-data__content {
+                        @apply gap-x-[40px];
+                        align-items: unset;
+                    }
+                    .product-advantage__content__clinical-data__content__image {
+                        @apply md:w-[50%] md:max-w-[80%] rounded-[35px] overflow-hidden;
+
+                        img {
+                            @apply md:absolute md:object-cover #{!important};
+                        }
+                    }
+
+                    .product-advantage__content__clinical-data__content__text {
+                        @apply md:max-w-[45%];
+                    }
+                    
+                }
                 &__note {
                     @apply text-center text-base italic pt-[20px];
                 }
@@ -214,7 +247,7 @@
                 
                 &:hover {
                     @apply scale-105 opacity-100;
-                    box-shadow: 4px 2px 10px 0px rgb(0, 0, 0, 0.8);
+                    box-shadow: 4px 2px 7px 0px rgb(0, 0, 0, 0.2);
                     .product-fact-figure__items__item__title {
                         @apply text-white;
                     }
@@ -244,7 +277,7 @@
                 @apply flex sm:flex-row flex-col md:gap-[40px] gap-[20px];
 
                 &__image {
-                    @apply relative md:pw-min-w-[400px] big:min-w-[400px] sm:min-w-[300px] min-w-[200px] overflow-hidden aspect-square border-2 border-wund-red rounded-[35px] bg-white;
+                    @apply relative md:min-w-[20%] sm:min-w-[300px] min-w-[200px] overflow-hidden aspect-square border-2 border-wund-red rounded-[35px] bg-white;
     
                     img {
                         @apply w-full h-full object-cover;
@@ -256,6 +289,10 @@
 
                     h4 {
                         @apply text-wund-red font-bold;
+                    }
+
+                    p {
+                        @apply md:pw-text-[20px] md:pw-leading-[35px] text-[16px] leading-[1.5];
                     }
 
                 }
@@ -278,7 +315,7 @@
             @apply grid md:grid-cols-2 grid-cols-1 lg:gap-x-[120px] gap-x-[40px] md:gap-y-[80px] gap-y-[40px];
 
             &__item {
-                @apply pr-[65px] relative max-w-[400px] mx-auto w-full;
+                @apply pr-[65px] relative mx-auto w-full;
 
                 &__number {
                     @apply absolute top-0 right-0 w-[140px] h-[50px] bg-wund-red text-white text-[20px] rounded-t-[15px] font-bold flex items-center justify-center rotate-90 translate-x-[28px] translate-y-[45px];
@@ -300,7 +337,11 @@
 
 
                     &__description {
-                        @apply flex-grow text-center font-medium;
+                        @apply flex-grow text-center font-medium ;
+
+                        p {
+                            @apply md:pw-text-[20px] md:pw-leading-[35px] text-[16px] leading-[1.5];
+                        }
                     }
                 }
             }
@@ -321,7 +362,7 @@
             @apply grid md:grid-cols-2 grid-cols-1 lg:gap-x-[200px] gap-x-[40px] md:gap-y-[80px] gap-y-[40px];
 
             &__item {
-                @apply pr-[65px] relative max-w-[400px] mx-auto w-full;
+                @apply pr-[65px] relative mx-auto w-full;
 
                 &__number {
                     @apply absolute top-0 right-0 w-[80px] h-[50px] bg-wund-red text-white text-[20px] rounded-t-[15px] font-bold flex items-center justify-center rotate-90 translate-x-[-2px] translate-y-[14px];
@@ -353,8 +394,12 @@
     &-comparison {
         
         .container {
-            @apply md:pt-[230px] pt-[130px] md:pb-[130px] pb-[60px] ;
+            @apply md:pb-[130px] pb-[60px] md:pw-pt-[200px] pt-[130px];
             @apply relative;
+
+            .label-title {
+                @apply md:mb-[100px] mb-[60px] ;
+            }
 
             .product-comparison__image {
                 @apply overflow-x-scroll;

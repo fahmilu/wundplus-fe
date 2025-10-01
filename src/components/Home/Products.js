@@ -46,7 +46,9 @@ const Products = ({ data }) => {
                     <Slider ref={sliderRef} {...settings}>
                         {data.items.map((item, index) => (
                             <div key={index} className="home-products__item">
-                                <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.title} fill className="!w-full !h-auto !object-contain !relative" />
+                                <div className="home-products__item__image">
+                                    <Image src={process.env.NEXT_PUBLIC_ASSET_URL + item.image} alt={item.title} fill className="!w-full !h-auto !object-contain !relative" />
+                                </div>
                                 <div className="btn-area">
                                     <Link href={`/${currentLocale}/${currentLocale === "en" ? "products" : "produk"}/${item.slug}`} className="btn btn-primary">{item.title}</Link>
                                 </div>

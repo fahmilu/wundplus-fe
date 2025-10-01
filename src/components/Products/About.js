@@ -8,7 +8,7 @@ const About = ({ dataParent, data }) => {
                     <Image src={process.env.NEXT_PUBLIC_ASSET_URL + data.image} alt={`${dataParent.name} About`} fill />
                 </div>
                 <div className="product-about__content">
-                    <h2 dangerouslySetInnerHTML={{ __html: replaceText(dataParent.name) }} />
+                    <h2 dangerouslySetInnerHTML={{ __html: replaceText(`<span data-color="brand" class="color" style="--color: brand; --dark-color: brand">wund+™</span> ${dataParent.name}`) }} />
                     <div className="product-about__content__list">
                         {data.items.map((item, index) => (
                             <div key={index} className="product-about__content__item">

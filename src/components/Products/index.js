@@ -14,7 +14,7 @@ const ProductsSwitcher = ({ type, dataParent, data }) => {
         case 'about':
             return data.active ? <About dataParent={dataParent} data={data} /> : null;
         case 'advantage':
-            return data.active ? <Advantage data={data} /> : null;
+            return data.active ? <Advantage data={data} dataParent={dataParent} /> : null;
         case 'fact-figure':
             return data.active ? <FactFigure data={data} /> : null;
         case 'how-it-works':

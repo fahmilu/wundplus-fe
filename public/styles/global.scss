@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-    @apply max-w-[1440px] mx-auto px-4 md:pw-px-[65px] big:px-[65px];
+    @apply mx-auto px-4 max-w-[100%] md:pw-px-[116px];
 }
 
 
@@ -35,7 +35,7 @@ a {
 }
 
 .label-title {
-    @apply bg-wund-red text-white md:pw-pr-[120px] pr-[65px] big:pr-[120px] md:pw-pl-[65px] pl-[30px] big:pl-[65px] md:pw-py-[40px] py-[20px] big:py-[40px] md:pw-rounded-ee-[100px] rounded-ee-[50px] big:rounded-ee-[100px] md:pw-text-[56px] text-[20px] big:text-[56px] leading-[1.2] font-light absolute top-0 left-0;
+    @apply bg-wund-red text-white md:pw-pr-[120px] pr-[65px] big:pr-[120px] md:pw-pl-[65px] pl-[30px] big:pl-[65px] md:pw-py-[40px] py-[20px] big:py-[40px] md:pw-rounded-ee-[100px] rounded-ee-[50px] big:rounded-ee-[100px] md:pw-text-[56px] text-[20px] big:text-[56px] leading-[1.2] font-light w-fit;
 
     strong {
         @apply font-bold;
@@ -47,7 +47,11 @@ a {
 }
 
 .floating-wa {
-    @apply fixed bottom-5 right-5 z-50 flex flex-row items-center;
+    @apply fixed top-0 left-0 z-50 flex flex-row items-center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 
     &__image {
         @apply w-[70px] h-[70px] relative bg-[#4FCC5D] rounded-full;
@@ -58,11 +62,38 @@ a {
     }
 
     &__text {
-        @apply text-white text-[19px] font-medium bg-[#4FCC5D] py-[12px] px-[30px] rounded-r-full -ml-[30px];
+        @apply text-white text-[19px] font-medium bg-[#4FCC5D] py-[12px] px-[30px] rounded-r-full sm:-ml-[30px] -ml-[20px];
     }
 
     &:hover {
         @apply opacity-80;
+    }
+
+    &.dragging {
+        @apply opacity-60;
+        cursor: grabbing !important;
+        
+        // .floating-wa__image {
+        //     @apply opacity-70;
+        // }
+        // .floating-wa__text {
+        //     @apply opacity-70;
+        // }
+    }
+
+    // Mobile responsiveness
+    @media (max-width: 768px) {
+        &__image {
+            @apply w-[60px] h-[60px];
+            
+            img {
+                @apply w-[35px] h-[35px];
+            }
+        }
+
+        &__text {
+            @apply text-[16px] py-[10px] px-[20px];
+        }
     }
 }
 
