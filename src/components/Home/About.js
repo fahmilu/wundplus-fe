@@ -11,7 +11,8 @@ const HomeAbout = ({ data }) => {
         <section id={currentLocale === "en" ? "about-us" : "tentang-kami"} className="home-about">
             <div className="home-about__image" data-aos="fade-right" data-aos-delay={100}>
                 <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + data.image} alt={data.title} fill className="hidden md:block" />
-                <ImageWithFallback src={process.env.NEXT_PUBLIC_ASSET_URL + data.image_mobile || `/imgs/home/about-mobile.jpg`} alt={data.title} fill className="block md:hidden" />
+                
+                <ImageWithFallback src={data.image_mobile ? process.env.NEXT_PUBLIC_ASSET_URL + data.image_mobile : `/imgs/about-mobile.jpg`} alt={data.title} fill className="block md:hidden" />
             </div>
             <div className="container" data-aos="fade-in" data-aos-delay={100}> 
                 <div className="home-about__content">

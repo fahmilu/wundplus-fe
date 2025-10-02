@@ -28,7 +28,7 @@
     }
 
     &-about {
-        @apply bg-[#fcfcfc] w-full relative md:aspect-[1440/901] md:h-auto h-[560px];
+        @apply bg-[#fcfcfc] w-full relative md:aspect-[1440/901] md:h-auto;
 
         &__image {
             @apply md:w-full w-[40%] max-[420px]:hidden h-full absolute top-0 left-0;
@@ -47,7 +47,7 @@
             @apply md:pw-max-w-[500px] max-[420px]:max-w-[100%] max-w-[60%] max-md:py-5 max-md:px-4 flex flex-col gap-[25px];
 
             &__description {
-                @apply pb-[25px] md:pw-text-[20px] text-[20px] md:pw-leading-[30px] leading-[25px];
+                @apply md:pb-[25px] md:pw-text-[20px] text-[16px] md:pw-leading-[30px] leading-[26px];
             }
 
             &__image {
