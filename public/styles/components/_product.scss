@@ -99,7 +99,7 @@
                 }
 
                 &__text {
-                    @apply flex-grow bg-gradient-to-r bg-white -ml-[20px] relative rounded-full sm:min-h-[98px] min-h-[70px] flex items-center sm:py-[20px] py-[10px] sm:px-[50px] px-[30px];
+                    @apply flex-grow bg-gradient-to-r bg-white -ml-[20px] relative rounded-full sm:min-h-[98px] min-h-[70px] flex items-center sm:py-[20px] py-[10px] sm:px-[30px] sm:pr-[0px] px-[30px];
                     &:before {
                         content: '';
                         @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%+2px)] h-[calc(100%+2px)]  bg-gradient-to-r from-wund-red to-wund-red/0  rounded-full z-[-1];
