@@ -63,6 +63,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSWHLL234Z"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-DSWHLL234Z');
+            `,
+          }}
+        />
+      </head>
       <body className={`${manrope.variable} ${gotham.variable} ${myriadPro.variable}`}>
         <AOSProvider>
           {children}
