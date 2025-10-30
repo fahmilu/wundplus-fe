@@ -21,8 +21,8 @@ export async function generateMetadata({ params }) {
     console.log(data);
 
     return {
-        title: `${data.meta.title || data.title} | wund+™`,
-        description: `${data.meta.description || data.description} | wund+™`,
+        title: `${data?.meta?.title || data?.title} | wund+™`,
+        description: `${data?.meta?.description || data?.description} | wund+™`,
     };
 }
 
