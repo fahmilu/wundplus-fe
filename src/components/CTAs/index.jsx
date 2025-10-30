@@ -24,7 +24,7 @@ const CTAs = ({ isProduct = false }) => {
                                 <img src="/imgs/shopee.png" alt="Shopee" />
                             </a>
                             <a href="https://www.tiktok.com/@wundplus" target="_blank">
-                                <img src="/imgs/tiktok.png" alt="Tiktop Shop" />
+                                <img src="/imgs/tiktok.png" alt="Tiktok Shop" />
                             </a>
                         </div>
                     </div>

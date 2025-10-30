@@ -30,8 +30,8 @@ export default function Desktop({ navItems }) {
                         Shopee
                     </a></li>
                     <li><a href="https://www.tiktok.com/@wundplus" target="_blank" className="nav-link">
-                        <img src="/imgs/tiktok.png" alt="Tiktop Shop" />
-                        Tiktop Shop
+                        <img src="/imgs/tiktok.png" alt="Tiktok Shop" />
+                        Tiktok Shop
                     </a></li>
                 </ul>
             </div>

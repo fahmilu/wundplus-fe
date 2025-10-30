@@ -113,9 +113,9 @@ export default function Mobile({ navItems }) {
                                                 className="flex items-center gap-3 text-white"
                                             >
                                                 <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                                                    <img src="/imgs/tiktok.png" alt="Tiktop Shop" className="w-[60%] h-[60%] object-contain" />
+                                                    <img src="/imgs/tiktok.png" alt="Tiktok Shop" className="w-[60%] h-[60%] object-contain" />
                                                 </div>
-                                                Tiktop Shop
+                                                Tiktok Shop
                                             </a>
                                         </li>
                                     </ul>
