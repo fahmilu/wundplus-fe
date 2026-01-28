@@ -94,7 +94,7 @@ export default function Mobile({ navItems }) {
                                         </li>
                                         <li>
                                             <a 
-                                                href="https://shopee.co.id/universal-link/wundplusindonesia" 
+                                                href="https://shopee.co.id/universal-link/gwswellness?deep_and_web=1&smtt=9&utm_campaign=s1530689304_ss_id_webs_websitealwayson&utm_medium=seller&utm_source=website" 
                                                 target="_blank" 
                                                 rel="noopener noreferrer"
                                                 className="flex items-center gap-3 text-white"

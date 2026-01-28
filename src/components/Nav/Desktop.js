@@ -25,7 +25,7 @@ export default function Desktop({ navItems }) {
                         <img src="/imgs/tokopedia.png" alt="Tokopedia" />
                         Tokopedia
                     </a></li>
-                    <li><a href="https://shopee.co.id/universal-link/wundplusindonesia" target="_blank" className="nav-link">
+                    <li><a href="https://shopee.co.id/universal-link/gwswellness?deep_and_web=1&smtt=9&utm_campaign=s1530689304_ss_id_webs_websitealwayson&utm_medium=seller&utm_source=website" target="_blank" className="nav-link">
                         <img src="/imgs/shopee.png" alt="Shopee" />
                         Shopee
                     </a></li>
