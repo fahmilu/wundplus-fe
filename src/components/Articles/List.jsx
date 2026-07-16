@@ -33,7 +33,7 @@ const ArticlesList = ({ articles = [] }) => {
     // Generate page numbers for pagination
     const pageNumbers = useMemo(() => {
         const pages = [];
-        const maxVisiblePages = 5;
+        const maxVisiblePages = 10;
         
         if (totalPages <= maxVisiblePages) {
             for (let i = 1; i <= totalPages; i++) {
